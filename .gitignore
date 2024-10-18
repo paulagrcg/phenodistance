@@ -2,7 +2,7 @@
 data/
 plots/
 jobs/
-
+README_me.md
 # Ignore Python cache and virtual environment
 __pycache__/
 *.pyc

@@ -1,6 +1,7 @@
 # Ignore data files and generated plots
 data/
 plots/
+jobs/
 
 # Ignore Python cache and virtual environment
 __pycache__/

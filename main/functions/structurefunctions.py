@@ -1,11 +1,5 @@
-import itertools as it
 from collections import Counter
-import pickle
 from collections import defaultdict
-import time
-import sys
-import os
-import math
 import random 
 from basefunctions import *
 
@@ -40,7 +34,7 @@ def evolvabilitygD_PD(gpmapdet):
                         prodfold[foldmut] *=0
                     else: prodfold[foldmut]*=1
             for foldmut,pprime in prodfold.items():
-                evgdictd[seq]+=stringdif(p,foldmut)*(1-pprime)
+                evgdictd[seq]+=hamming(p,foldmut)*(1-pprime)
     return evgdictd
 
 def evolvabilitypD_PD(dictRNA12):

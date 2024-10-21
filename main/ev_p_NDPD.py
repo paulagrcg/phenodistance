@@ -1,4 +1,4 @@
-from ..functions.structurefunctions import *
+from functions.structurefunctions import *
 
 a_file = open("/rds/user/pg520/hpc-work/dictRNA12tot.pkl", "rb")
 gpmap  = pickle.load(a_file)

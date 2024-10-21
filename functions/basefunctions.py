@@ -26,6 +26,7 @@ def mutation(seq,mu):
             seq = p
     return seq
 
+
 def hamming_vec(a,b):
         return sum(x!=y for x,y, in zip(list(a),list(b)))
 

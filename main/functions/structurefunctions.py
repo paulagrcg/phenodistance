@@ -1,7 +1,9 @@
 from collections import Counter
 from collections import defaultdict
 import random 
-from main.functions.basefunctions import *
+import sys
+sys.path.append('/home/pg520/phenodistance/main/functions/')
+from basefunctions import *
 
 def robustnessD_PD(d,folds,K,L):
     s = list(d.keys())

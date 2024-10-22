@@ -2,6 +2,7 @@ from collections import Counter
 from collections import defaultdict
 import random 
 import sys
+import functools
 sys.path.append('/home/pg520/phenodistance/main/functions/')
 from basefunctions import *
 
@@ -178,3 +179,39 @@ def sampleGP(dictsuboptRNA12, L):
             probsList.append(probg)
         resolutiongp[seq] = random.choices(foldList, weights = probsList, k=1)[0]
     return resolutiongp
+
+def neutralsets_DPD(neutralsets,L):
+    fPD= defaultdict(float)
+    for key1 in neutralsets.keys():
+        p1 = key1[:12]  
+        for key2 in neutralsets.keys():
+            p2 = key2[:12]  
+            for d in range(L + 1):
+                if similarity(p1, p2) == d / L:
+                    fPD[p1] += neutralsets[key2] * (d / L)
+    return fPD
+
+def hamming_local_D_PD(gpmap):
+    hamming_local = defaultdict(functools.partial(defaultdict, float))
+    for seq in gpmap.keys():
+        for mut in mutationalneighbours(seq):
+            if gpmap[seq] != gpmap[mut]: #ignore robustness term
+                hamming_local[gpmap[seq]][hamming(gpmap[seq],gpmap[mut])] +=1
+    return hamming_local
+
+def hamming_global_D_PD(neutralsets,L):
+    hamming_global = defaultdict(functools.partial(defaultdict, float))
+    for fold in neutralsets.keys():
+        fold = fold[0:L]
+        for fold1 in neutralsets.keys():
+            if fold1[0:L] != fold: #ignore robustness term
+                fold1 = fold1[0:L]
+                hamming_global[fold][hamming(fold,fold1)] +=1*neutralsets[fold1]
+    return hamming_global
+
+def phipqD(gpmap,neutralsets,K,L):
+    phi_pq = defaultdict(functools.partial(defaultdict, float))
+    for seq in gpmap.keys():
+        for mut in mutationalneighbours(seq):
+            phi_pq[gpmap[seq]][gpmap[mut]] +=1/(neutralsets[gpmap[seq]+'\n']*(K-1)*L)
+    return phi_pq

@@ -8,7 +8,8 @@ if __name__ == "__main__":
 
     a_file = open("/home/pg520/phenodistance/data/DGPmap.pkl", "rb")
     DGPmap  = pickle.load(a_file)
-
+    a_file = open("/home/pg520/phenodistance/data/neutralsets.pkl", "rb")
+    neutralsets = pickle.load(a_file)
     with open("/rds/user/pg520/hpc-work/folddictt.pkl", "rb") as f:
         folddict = pickle.load(f)
 
@@ -27,3 +28,10 @@ if __name__ == "__main__":
         pickle.dump(ev_g_pd,f)
     with open("/home/pg520/phenodistance/data/evpDPD.pkl","wb") as f:
         pickle.dump(ev_p_pd,f)
+
+    neutralsetsDPD = neutralsets_DPD(neutralsets,L)
+
+    with open("/home/pg520/phenodistance/data/neutralsetsDPD.pkl","wb") as f:
+        pickle.dump(neutralsetsDPD,f)
+
+    

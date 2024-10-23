@@ -192,12 +192,26 @@ def neutralsets_DPD(neutralsets,L):
     return fPD
 
 def hamming_local_D_PD(gpmap):
+    edge = defaultdict(float)
     hamming_local = defaultdict(functools.partial(defaultdict, float))
     for seq in gpmap.keys():
         for mut in mutationalneighbours(seq):
             if gpmap[seq] != gpmap[mut]: #ignore robustness term
+                edge[gpmap[seq]] +=1
                 hamming_local[gpmap[seq]][hamming(gpmap[seq],gpmap[mut])] +=1
-    return hamming_local
+    return hamming_local, edge
+
+def hamming_local_D_PD_nodel(gpmap):
+    edge = defaultdict(float)
+    L=12
+    hamming_local = defaultdict(functools.partial(defaultdict, float))
+    for seq in gpmap.keys():
+        if gpmap[seq] == '.'*L: continue
+        for mut in mutationalneighbours(seq):
+            if gpmap[mut] == '.'*L or gpmap[seq] == gpmap[mut]: continue
+            edge[gpmap[seq]] +=1
+            hamming_local[gpmap[seq]][hamming(gpmap[seq],gpmap[mut])] +=1
+    return hamming_local, edge
 
 def hamming_global_D_PD(neutralsets,L):
     hamming_global = defaultdict(functools.partial(defaultdict, float))
@@ -205,8 +219,19 @@ def hamming_global_D_PD(neutralsets,L):
         fold = fold[0:L]
         for fold1 in neutralsets.keys():
             if fold1[0:L] != fold: #ignore robustness term
-                fold1 = fold1[0:L]
-                hamming_global[fold][hamming(fold,fold1)] +=1*neutralsets[fold1]
+                foldd = fold1[0:L]
+                hamming_global[fold][hamming(fold,foldd)] += neutralsets[fold1]
+    return hamming_global
+
+def hamming_global_D_PD_nodel(neutralsets,L):
+    hamming_global = defaultdict(functools.partial(defaultdict, float))
+    for fold in neutralsets.keys():
+        fold = fold[0:L]
+        if fold=='.'*L: continue
+        for fold1 in neutralsets.keys():
+            if fold1[0:L]=='.'*L or fold1[0:L] == fold: continue
+            foldd = fold1[0:L]
+            hamming_global[fold][hamming(fold,foldd)] += neutralsets[fold1]
     return hamming_global
 
 def phipqD(gpmap,neutralsets,K,L):

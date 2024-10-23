@@ -12,12 +12,14 @@ if __name__ == "__main__":
     a_file = open("/home/pg520/phenodistance/data/neutralsets.pkl", "rb")
     neutralsets = pickle.load(a_file)
  
-    hamminglocalDPD = hamming_local_D_PD(DGPmap)
-    hammingglobalDPD = hamming_global_D_PD(neutralsets,L)
+#    hamminglocalDPD_nodel, edgeD = hamming_local_D_PD_nodel(DGPmap)
+#    hammingglobalDPD_nodel = hamming_global_D_PD_nodel(neutralsets,L)
     phipq = phipqD(DGPmap,neutralsets,K,L)
-    with open("/home/pg520/phenodistance/data/hamminglocalDPD.pkl","wb") as f:
-        pickle.dump(hamminglocalDPD,f)
-    with open("/home/pg520/phenodistance/data/hammingglobalDPD.pkl","wb") as f:
-        pickle.dump(hammingglobalDPD,f)
+#    with open("/home/pg520/phenodistance/data/hamminglocalDPD_nodel.pkl","wb") as f:
+#        pickle.dump(hamminglocalDPD_nodel,f)
+#    with open("/home/pg520/phenodistance/data/edgeD.pkl","wb") as f:
+#        pickle.dump(edgeD,f)
+#    with open("/home/pg520/phenodistance/data/hammingglobalDPD_nodel.pkl","wb") as f:
+#        pickle.dump(hammingglobalDPD_nodel,f)
     with open("/home/pg520/phenodistance/data/phipq.pkl","wb") as f:
         pickle.dump(phipq,f)

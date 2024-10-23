@@ -30,3 +30,8 @@ if __name__ == "__main__":
 					os.makedirs('/rds/user/pg520/hpc-work/rhopNDPD')
 	a_file = open("/rds/user/pg520/hpc-work/rhopNDPD/rhopNDPD"+str(i)+".pkl","wb")
 	pickle.dump(rhop,a_file)
+
+
+
+
+

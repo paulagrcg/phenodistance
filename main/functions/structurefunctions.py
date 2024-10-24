@@ -238,6 +238,7 @@ def hamming_global_D_PD_nodel(neutralsets,L):
 def phipqD(gpmap,neutralsets,K,L):
     phi_pq = defaultdict(functools.partial(defaultdict, float))
     for seq in gpmap.keys():
+        if seq == '.'*L: continue
         for mut in mutationalneighbours(seq):
             phi_pq[gpmap[seq]][gpmap[mut]] +=1/(neutralsets[gpmap[seq]+'\n']*(K-1)*L)
     return phi_pq

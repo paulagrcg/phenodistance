@@ -22,7 +22,9 @@ if __name__ == "__main__":
 	folddictvals = list(folddict.values())[int(i)]
 	evp = {folddictkeys: evolvabilitypND_PD0(folddictkeys,folddictvals,gpmap)}
 	rhop = {folddictkeys: robustnesspND_PD0(folddictkeys,folddictvals,gpmap)}
-
+	
+	if not os.path.exists('/rds/user/pg520/hpc-work/evpNDPD'):
+					os.makedirs('/rds/user/pg520/hpc-work/evpNDPD')
 	a_file = open("/rds/user/pg520/hpc-work/evpNDPD/evpNDPD"+str(i)+".pkl","wb")
 	pickle.dump(evp,a_file)
 

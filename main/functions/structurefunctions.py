@@ -175,7 +175,7 @@ def sampleGP(dictsuboptRNA12, L):
         probsList = []
         phvsprobseq = extractnormalisedprobs(subopt,L)
         print(phvsprobseq)
-        for phenotype,probg in phvsprobseq.values():
+        for phenotype,probg in phvsprobseq.items():
             foldList.append(phenotype)
             probsList.append(probg)
         resolutiongp[seq] = random.choices(foldList, weights = probsList, k=1)[0]

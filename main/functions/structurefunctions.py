@@ -174,7 +174,6 @@ def sampleGP(dictsuboptRNA12, L):
         foldList = []
         probsList = []
         phvsprobseq = extractnormalisedprobs(subopt,L)
-        print(phvsprobseq)
         for phenotype,probg in phvsprobseq.items():
             foldList.append(phenotype)
             probsList.append(probg)

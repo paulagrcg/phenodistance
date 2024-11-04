@@ -202,7 +202,7 @@ def hamming_local_D_PD(gpmap):
     return hamming_local, edge
 
 def hamming_local_D_PD_site(gpmap):
-    edge = defaultdict(float)
+    edge = defaultdict(functools.partial(defaultdict, float))
     hamming_local = defaultdict(functools.partial(defaultdict, float))
     for seq in gpmap.keys():
         for site in range(0,len(seq)):
@@ -236,7 +236,6 @@ def hamming_global_D_PD(neutralsets,L):
     return hamming_global
 
 def hamming_global_D_PD_site(gpmap, neutralsets):
-    edge = defaultdict(float)
     hamming_global = defaultdict(functools.partial(defaultdict, float))
     for seq in gpmap.keys():
         for site in range(0,len(seq)):

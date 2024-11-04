@@ -5,6 +5,7 @@ import sys
 import functools
 sys.path.append('/home/pg520/phenodistance/main/functions/')
 from basefunctions import *
+import numpy as np
 
 def robustnessD_PD(d,folds,K,L):
     s = list(d.keys())
@@ -237,11 +238,13 @@ def hamming_global_D_PD(neutralsets,L):
 
 def hamming_global_D_PD_site(gpmap, neutralsets):
     hamming_global = defaultdict(functools.partial(defaultdict, float))
+    totsets = np.sum(list(neutralsets.values()))
+    print(totsets)
     for seq in gpmap.keys():
         for site in range(0,len(seq)):
             for mut in mutationalneighbours_site(seq, site):
                 if gpmap[seq] != gpmap[mut]: #ignore robustness term
-                    hamming_global[gpmap[seq]][site] += hamming(gpmap[seq],gpmap[mut])/neutralsets[gpmap[mut]+'\n']
+                    hamming_global[gpmap[seq]][site] += hamming(gpmap[seq],gpmap[mut])*(neutralsets[gpmap[mut]+'\n']/totsets)
     return hamming_global
 
 def hamming_global_D_PD_nodel(neutralsets,L):

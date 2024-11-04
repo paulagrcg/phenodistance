@@ -201,6 +201,18 @@ def hamming_local_D_PD(gpmap):
                 hamming_local[gpmap[seq]][hamming(gpmap[seq],gpmap[mut])] +=1
     return hamming_local, edge
 
+def hamming_local_D_PD_site(gpmap):
+    edge = defaultdict(float)
+    hamming_local = defaultdict(functools.partial(defaultdict, float))
+    for seq in gpmap.keys():
+        for site in range(0,len(seq)):
+            for mut in mutationalneighbours_site(seq, site):
+                if gpmap[seq] != gpmap[mut]: #ignore robustness term
+                    edge[gpmap[seq]][site] +=1
+                    hamming_local[gpmap[seq]][site] += hamming(gpmap[seq],gpmap[mut])
+    return hamming_local, edge
+
+
 def hamming_local_D_PD_nodel(gpmap):
     edge = defaultdict(float)
     L=12
@@ -221,6 +233,16 @@ def hamming_global_D_PD(neutralsets,L):
             if fold1[0:L] != fold: #ignore robustness term
                 foldd = fold1[0:L]
                 hamming_global[fold][hamming(fold,foldd)] += neutralsets[fold1]
+    return hamming_global
+
+def hamming_global_D_PD_site(gpmap, neutralsets):
+    edge = defaultdict(float)
+    hamming_global = defaultdict(functools.partial(defaultdict, float))
+    for seq in gpmap.keys():
+        for site in range(0,len(seq)):
+            for mut in mutationalneighbours_site(seq, site):
+                if gpmap[seq] != gpmap[mut]: #ignore robustness term
+                    hamming_global[gpmap[seq]][site] += hamming(gpmap[seq],gpmap[mut])/neutralsets[gpmap[mut]]
     return hamming_global
 
 def hamming_global_D_PD_nodel(neutralsets,L):

@@ -8,6 +8,10 @@ def mutationalneighbours(seq):
     mutations = {'A': ['C','U','G'],'C': ['A','U','G'],'G': ['A','U','C'], 'U':['A','G','C']}
     return [seq[:j] + m + seq[j+1:] for j in range(0,len(seq)) for m in mutations[str(seq[j])]]
 
+def mutationalneighbours_site(seq,site):
+    mutations = {'A': ['C','U','G'],'C': ['A','U','G'],'G': ['A','U','C'], 'U':['A','G','C']}
+    return [seq[:site] + m + seq[site+1:] for m in mutations[str(seq[site])]]
+
 def extractnormalisedprobs(pboltzlist,L):
     probsnorm = []
     for p in pboltzlist:

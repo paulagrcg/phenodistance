@@ -241,7 +241,7 @@ def hamming_global_D_PD_site(gpmap, neutralsets):
         for site in range(0,len(seq)):
             for mut in mutationalneighbours_site(seq, site):
                 if gpmap[seq] != gpmap[mut]: #ignore robustness term
-                    hamming_global[gpmap[seq]][site] += hamming(gpmap[seq],gpmap[mut])/neutralsets[gpmap[mut]]
+                    hamming_global[gpmap[seq]][site] += hamming(gpmap[seq],gpmap[mut])/neutralsets[gpmap[mut]+'\n']
     return hamming_global
 
 def hamming_global_D_PD_nodel(neutralsets,L):

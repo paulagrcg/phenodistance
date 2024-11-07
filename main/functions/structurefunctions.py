@@ -205,13 +205,16 @@ def hamming_local_D_PD(gpmap):
 def hamming_local_D_PD_site(gpmap):
     edge = defaultdict(functools.partial(defaultdict, float))
     hamming_local = defaultdict(functools.partial(defaultdict, float))
+    phenos = defaultdict(functools.partial(defaultdict, list))
     for seq in gpmap.keys():
+        if gpmap[seq] == '.'*12: continue
         for site in range(0,len(seq)):
             for mut in mutationalneighbours_site(seq, site):
                 if gpmap[seq] != gpmap[mut]: #ignore robustness term
                     edge[gpmap[seq]][site] +=1
+                    phenos[gpmap[seq]][site].append(gpmap[mut])
                     hamming_local[gpmap[seq]][site] += hamming(gpmap[seq],gpmap[mut])
-    return hamming_local, edge
+    return hamming_local, edge, phenos
 
 
 def hamming_local_D_PD_nodel(gpmap):
@@ -236,16 +239,6 @@ def hamming_global_D_PD(neutralsets,L):
                 hamming_global[fold][hamming(fold,foldd)] += neutralsets[fold1]
     return hamming_global
 
-def hamming_global_D_PD_site(gpmap, neutralsets):
-    hamming_global = defaultdict(functools.partial(defaultdict, float))
-    totsets = np.sum(list(neutralsets.values()))
-    print(totsets)
-    for seq in gpmap.keys():
-        for site in range(0,len(seq)):
-            for mut in mutationalneighbours_site(seq, site):
-                if gpmap[seq] != gpmap[mut]: #ignore robustness term
-                    hamming_global[gpmap[seq]][site] += hamming(gpmap[seq],gpmap[mut])*(neutralsets[gpmap[mut]+'\n']/totsets)
-    return hamming_global
 
 def hamming_global_D_PD_nodel(neutralsets,L):
     hamming_global = defaultdict(functools.partial(defaultdict, float))

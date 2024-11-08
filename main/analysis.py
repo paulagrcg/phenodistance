@@ -30,4 +30,11 @@ if __name__ == "__main__":
         pickle.dump(edgeD,f)
     with open("/home/pg520/phenodistance/data/phenos_site.pkl","wb") as f:
         pickle.dump(phenos_site,f)
+    hamming_local_site_nodel, edgeD_nodel, phenos_site_nodel= hamming_local_D_PD_site_nodel(DGPmap)
+    with open("/home/pg520/phenodistance/data/hamming_local_site_nodel.pkl","wb") as f:
+        pickle.dump(hamming_local_site_nodel,f)
+    with open("/home/pg520/phenodistance/data/edgeD_nodel.pkl","wb") as f:
+        pickle.dump(edgeD_nodel,f)
+    with open("/home/pg520/phenodistance/data/phenos_site_nodel.pkl","wb") as f:
+        pickle.dump(phenos_site_nodel,f)
 #    hammingglobalDPD_nodel = hamming_global_D_PD_nodel(neutralsets,L)

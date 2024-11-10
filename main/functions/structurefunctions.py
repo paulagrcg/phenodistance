@@ -225,7 +225,7 @@ def hamming_local_D_PD_site_nodel(gpmap):
         if gpmap[seq] == '.'*12: continue
         for site in range(0,len(seq)):
             for mut in mutationalneighbours_site(seq, site):
-                if gpmap[seq] != gpmap[mut] or gpmap[mut] == '.'*12: continue #ignore robustness term and the mutations that lead to deleterious
+                if gpmap[seq] == gpmap[mut] or gpmap[mut] == '.'*12: continue #ignore robustness term and the mutations that lead to deleterious
                 edge[gpmap[seq]][site] +=1 #edge only count different phenos except deleterious
                 phenos[gpmap[seq]][site].append(gpmap[mut])
                 hamming_local[gpmap[seq]][site] += hamming(gpmap[seq],gpmap[mut])

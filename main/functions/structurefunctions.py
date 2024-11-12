@@ -230,12 +230,12 @@ def hamming_local_D_PD_site_nodel(gpmap):
                 if gpmap[seq] == gpmap[mut] or gpmap[mut] == '.'*12: continue #ignore robustness term and the mutations that lead to deleterious
                 edge[gpmap[seq]][site] +=1 #edge only count different phenos except deleterious
                 phenos[gpmap[seq]][site].append(gpmap[mut])
-                
                 hamming_local[gpmap[seq]][site] += hamming(gpmap[seq],gpmap[mut])
             phenos[gpmap[seq]][site] = list(set(phenos[gpmap[seq]][site]))
             phenosevolvability[gpmap[seq]][site] = len(phenos[gpmap[seq]][site])
-            for phenomut in phenos[gpmap[seq]][site].values():
-                phenosevweighted[gpmap[seq]][site] += hamming(gpmap[seq],phenomut)
+    for phenoseq,phenosevsite in phenos.items():
+         for site,phenomut in phenosevsite.items():
+            phenosevweighted[phenoseq][site] += hamming(phenoseq,phenomut)
     return hamming_local, edge, phenos, phenosevolvability, phenosevweighted
 
 def hamming_local_D_PD_nodel(gpmap):

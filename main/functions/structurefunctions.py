@@ -218,25 +218,48 @@ def hamming_local_D_PD_site(gpmap):
 
 
 def hamming_local_D_PD_site_nodel(gpmap):
-    edge = defaultdict(functools.partial(defaultdict, float))
-    hamming_local = defaultdict(functools.partial(defaultdict, float))
-    phenos = defaultdict(functools.partial(defaultdict, list))
-    phenosevolvability = defaultdict(functools.partial(defaultdict, float))
-    phenosevweighted = defaultdict(functools.partial(defaultdict, float))
+    edgediffnodel = defaultdict(functools.partial(defaultdict, float)) #edge only count different phenos except deleterious
+    hamming_local = defaultdict(functools.partial(defaultdict, list)) #hamming distance between phenos at site
+    phenos = defaultdict(functools.partial(defaultdict, list)) #phenos accessible at site
+    phenosevolvability = defaultdict(functools.partial(defaultdict, float)) #number of different phenos accessible at site
+    phenosevweighted = defaultdict(functools.partial(defaultdict, float)) #weighted evolvability at site
+    robustnesssite = defaultdict(functools.partial(defaultdict, float)) #mutations that do not change phenotype at site
+    totrobust = defaultdict(float) #total number of mutations that do not change phenotype
+    edgenondel = defaultdict(functools.partial(defaultdict, float)) #total number of mutations that do not lead to deleterious phenotype
+    hamming_local_mean = defaultdict(functools.partial(defaultdict, float)) #mean hamming distance between phenos at site
+    hamming_local_std = defaultdict(functools.partial(defaultdict, float)) #std hamming distance between phenos at site
+    
+    #data collection
     for seq in gpmap.keys():
         if gpmap[seq] == '.'*12: continue
         for site in range(0,len(seq)):
             for mut in mutationalneighbours_site(seq, site):
-                if gpmap[seq] == gpmap[mut] or gpmap[mut] == '.'*12: continue #ignore robustness term and the mutations that lead to deleterious
-                edge[gpmap[seq]][site] +=1 #edge only count different phenos except deleterious
-                phenos[gpmap[seq]][site].append(gpmap[mut])
-                hamming_local[gpmap[seq]][site] += hamming(gpmap[seq],gpmap[mut])
+                    edgenondel[gpmap[seq]][site] +=1
+                    if gpmap[seq] == gpmap[mut]:   
+                        robustnesssite[gpmap[seq]][site] +=1
+                        totrobust[gpmap[seq]] +=1
+                        continue
+                    edgediffnodel[gpmap[seq]][site] +=1 
+                    phenos[gpmap[seq]][site].append(gpmap[mut])
+                    if gpmap[mut] != '.'*12:
+                        hamming_local[gpmap[seq]][site].append(hamming(gpmap[seq],gpmap[mut]))
             phenos[gpmap[seq]][site] = list(set(phenos[gpmap[seq]][site]))
             phenosevolvability[gpmap[seq]][site] = len(phenos[gpmap[seq]][site])
+   
+   #mean and std of hamming distance between phenos at site
+    for pheno,sitehamming in hamming_local.items():
+        for site,hamminglist in sitehamming.items():
+            hamming_local_mean[pheno][site] = np.mean(hamminglist)
+            hamming_local_std[pheno][site] = np.std(hamminglist)
+
+    #weighted evolvability
+            
     for phenoseq,phenosevsite in phenos.items():
          for site,phenomut in phenosevsite.items():
             phenosevweighted[phenoseq][site] += hamming(phenoseq,phenomut)
-    return hamming_local, edge, phenos, phenosevolvability, phenosevweighted
+
+    return hamming_local_mean, hamming_local_std, edgediffnodel, phenos, phenosevolvability, phenosevweighted, robustnesssite, totrobust, edgenondel
+
 
 def hamming_local_D_PD_nodel(gpmap):
     edge = defaultdict(float)
@@ -280,3 +303,4 @@ def phipqD(gpmap,neutralsets,K,L):
         for mut in mutationalneighbours(seq):
             phi_pq[gpmap[seq]][gpmap[mut]] +=1/(neutralsets[gpmap[seq]+'\n']*(K-1)*L)
     return phi_pq
+

@@ -6,62 +6,36 @@ import functools
 sys.path.append('/home/pg520/phenodistance/main/functions/')
 from basefunctions import *
 import numpy as np
+import os 
+import pickle
 
 stn = {'A': '0', 'U': '1', 'C': '2', 'G': '3'}
 
-def evodyn(initpop, phenoq, phenop, L=12, gpmap = {}, mu = 0.05, generations = 10000, Npop = 100):
+def evodyn(initpop, T, phenoq, L=12, gpmap = {}, mu = 0.05, generations = 10000, Npop = 100):
         popgenos = {}
         #initpop is a tupple with initial target pheno and initial population list
         popgenos = np.empty((generations+1, Npop),dtype=int)
         timediscovered = defaultdict(int)
         hammingdist = defaultdict(int)
         fitness = defaultdict(float)
-                
+        phenos = defaultdict(list)
+
         for i in range(1,generations+1): # i is generation number
                 if i ==1:
                         genos = np.array([initpop[1]]*Npop)
+                        fitness[phenoq] = 1
                 else: genos = newpop
                 popgenos[i] = [int(''.join([stn[n] for n in geno])) for geno in genos] #taken from i-1 mutated population
                 unique, counts = np.unique(popgenos[i], return_counts=True)
                 freq = dict(zip(unique, counts)) #counts the number of times each genotype appears in the population
                 phenos = []
                 for j in range(0,Npop):
-                        phenos.append(gpmap[genos[j]])
-                
+                        phenos[i].append(gpmap[genos[j]])
+
                 for pheno in phenos:
                         if pheno not in list(fitness.keys()):
-                                if pheno == pheno_q: fitness[pheno] = 1
-                                fitness[pheno] = 1+(targets,pheno)
-                                foldfitdict[pheno] = fitness[pheno]
-                #population PLASTIC fitness if samplenum = 1, or MAX fitness if samplenum > 1 
-                popgen = {}
-                probstarg0 = {}
-                probstarg0seqscom = []
-                probstarg1seqscom = []
-                probstarg1 = {}
-                count = 0
-                #cadapt = 0
-                for ng,phs,ps in zip(genos,folds.values(),probs.values()):
-                        plasticfitness = 0 
-                        maxfitness = 0
-                        #maxfitness out of the sampled plastic phenotypes
-                        if plasticoption == False: 
-                                foldschoices = random.choices(list(phs),weights = list(ps), k=samplenum)
-                                maxfitness = max([foldfitdict[k] for k in foldschoices])
-                                popgen[(ng,count)] = maxfitness
-                        #plastic fitness (weighted)
-                        else:
-                                for index in range(0,len(phs)): plasticfitness += foldfitdict[phs[index]]*ps[index]
-                                popgen[(ng,count)] = plasticfitness#population data for plastic fitnesses
-
-                        #population data  for TPs probs
-                        if seqscommonCounter[popgenos[i][count]] == 1: 
-                            probstarg0seqscom.append(prob0[count])
-                            probstarg1seqscom.append(prob1[count])
-                        probstarg1[(ng,count)] = prob1[count]
-                        probstarg0[(ng,count)] = prob0[count]
-                        count+=1
-        
+                                fitness[pheno] = 1+np.heaviside(i - T, hamming(pheno,phenoq)) #fitness increases by Hamming distance once generation T is reached
+         
         
                 #mean fitness of population at gen i       
                 meanfitness[i] = sum(list(popgen.values()))/len(popgen)

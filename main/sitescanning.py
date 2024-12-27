@@ -38,7 +38,9 @@ def hamming_plasticity_optimal(fRNAhammingdistance, fRNAfolds, distances):
 
 def mutatesite(seq, site):
     mutations = {'A': ['C', 'U', 'G'], 'C': ['A', 'U', 'G'], 'G': ['A', 'U', 'C'], 'U': ['A', 'G', 'C']}
-    return [seq[:site] + m + seq[site+1:] for m in mutations[str(seq[site])]]
+    mutationchoices = [seq[:site] + m + seq[site+1:] for m in mutations[str(seq[site])]]
+
+    return mutationchoices
 
 def scan_sites(seq, samplesize):
     seqs = []
@@ -47,7 +49,6 @@ def scan_sites(seq, samplesize):
     probs1 = []
     probs2 = []
     samplesizecount = 0
-    samplesizebreak = False
 
     seqoutput = suboptfolding(seq)
     seqs.append(seq)
@@ -61,15 +62,21 @@ def scan_sites(seq, samplesize):
     folds2.append(fold2)
     probs1.append(prob1)
     probs2.append(prob2)
-
+    
+    site = 0
     seqlen = len(seq)
-    while samplesizecount < samplesize:
-        for site in range(seqlen):
-            for seqmut in mutatesite(seq, site):
+    while samplesizecount < samplesize: 
+        while site < seqlen:
+            site_neutral = False
+            mutationchoices = mutatesite(seq, site)  # random mutation at site
+            while not site_neutral and mutationchoices:
+                m = np.random.randint(0, len(mutationchoices))
+                seqmut = mutationchoices.pop(m)
                 mutoutput = suboptfolding(seqmut)
                 if fold1 == mutoutput[0][0] and fold2 == mutoutput[1][0]:  # if MFE is the same (so in the same neutral space)
-                    #print(f"Match found: {fold1} == {mutoutput[0][0]} and {fold2} == {mutoutput[1][0]}")
+                    # print(f"Match found: {fold1} == {mutoutput[0][0]} and {fold2} == {mutoutput[1][0]}")
                     seqs.append(seqmut)
+                    site_neutral = True
                     fold1 = mutoutput[0][0]
                     fold2 = mutoutput[1][0]
                     prob2 = float(mutoutput[1][2])
@@ -81,16 +88,11 @@ def scan_sites(seq, samplesize):
                     probs2.append(prob2)
 
                     samplesizecount += 1
+                    site += 1
+                    if site == seqlen:
+                        site = 0
                     seq = seqmut
-                    samplesizebreak = True
-                    break
-            if samplesizebreak:
-                #print(f"Breaking inner loop at site {site}")
-                samplesizebreak = False
-                break
-        if samplesizebreak:
-            #print("Breaking outer loop")
-            break
+                            
 
     print(f"Total sequences found: {samplesizecount}")
     return seqs, folds1, folds2, probs1, probs2
@@ -110,13 +112,13 @@ def compute_pvalue(p1, p2, kde, data):
 if __name__ == "__main__":
 
     
-    with open('./data/fRNAhammingdistance.pkl','rb') as f:
+    with open('../data/fRNAhammingdistance.pkl','rb') as f:
         fRNAhammingdistance = pickle.load(f)
-    with open('./data/fRNAprob2.pkl','rb') as f:
+    with open('../data/fRNAprob2.pkl','rb') as f:
         fRNAprob2 =  pickle.load(f)
-    with open('./data/fRNAprob1.pkl','rb') as f:
+    with open('../data/fRNAprob1.pkl','rb') as f:
         fRNAprob1 =  pickle.load(f)
-    with open('./data/fRNAfolds.pkl','rb') as f:
+    with open('../data/fRNAfolds.pkl','rb') as f:
         fRNAfolds =  pickle.load(f)
 
     distances = plasticitydistance(fRNAprob1, fRNAprob2)
@@ -141,6 +143,6 @@ if __name__ == "__main__":
     p_value = compute_pvalue(p1, p2, kde, data)
 
     #print(f"Time taken for site scanning: {end-start}")
-    with open(f"./data/site_scanning_probs_pval_{seqposition}.pkl","wb") as f:
-        pickle.dump({'probs1': probs1, 'probs2': probs2, 'p_value': p_value})
+    with open(f"../data/site_scanning_probs_pval_{seqposition}.pkl","wb") as f:
+        pickle.dump({'probs1': probs1, 'probs2': probs2, 'p_value': p_value},f)
     

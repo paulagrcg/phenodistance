@@ -37,7 +37,7 @@ def hamming_plasticity_optimal(fRNAhammingdistance, fRNAfolds, distances):
     return selected_hamming_values, selected_min_distances, selected_names
 
 def mutatesite(seq, site):
-    mutations = {'A': ['C', 'U', 'G'], 'C': ['A', 'U', 'G'], 'G': ['A', 'U', 'C'], 'U': ['A', 'G', 'C']}
+    mutations = {'A': ['C', 'T', 'G'], 'C': ['A', 'T', 'G'], 'G': ['A', 'T', 'C'], 'T': ['A', 'G', 'C']}
     mutationchoices = [seq[:site] + m + seq[site+1:] for m in mutations[str(seq[site])]]
 
     return mutationchoices
@@ -50,7 +50,7 @@ def scan_sites(seq, samplesize):
     probs2 = []
     samplesizecount = 0
 
-    seqoutput = suboptfolding(seq)
+    seqoutput,seqfolds = suboptfolding(seq)
     seqs.append(seq)
 
     fold1 = seqoutput[0][0]
@@ -65,16 +65,16 @@ def scan_sites(seq, samplesize):
     
     site = 0
     seqlen = len(seq)
-    while samplesizecount < samplesize: 
-        while site < seqlen:
+    while site < seqlen:
             site_neutral = False
             mutationchoices = mutatesite(seq, site)  # random mutation at site
+
             while not site_neutral and mutationchoices:
                 m = np.random.randint(0, len(mutationchoices))
                 seqmut = mutationchoices.pop(m)
-                mutoutput = suboptfolding(seqmut)
-                if fold1 == mutoutput[0][0] and fold2 == mutoutput[1][0]:  # if MFE is the same (so in the same neutral space)
-                    # print(f"Match found: {fold1} == {mutoutput[0][0]} and {fold2} == {mutoutput[1][0]}")
+                mutoutput, mfolds = suboptfolding(seqmut)
+                if fold1 in mfolds and fold2 in mfolds:  # if MFE is the same (so in the same neutral space)
+                    print(f"Match found: {samplesizecount}")
                     seqs.append(seqmut)
                     site_neutral = True
                     fold1 = mutoutput[0][0]
@@ -88,11 +88,20 @@ def scan_sites(seq, samplesize):
                     probs2.append(prob2)
 
                     samplesizecount += 1
+                    if samplesizecount == samplesize:
+                        break
                     site += 1
+                    print(f"Match found: {samplesizecount}")
                     if site == seqlen:
                         site = 0
                     seq = seqmut
-                            
+            if samplesizecount == samplesize:
+                break
+            if not mutationchoices:
+                print(f"No more mutation choices at site {site}")
+                site += 1
+                if site == seqlen:
+                    site = 0
 
     print(f"Total sequences found: {samplesizecount}")
     return seqs, folds1, folds2, probs1, probs2

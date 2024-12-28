@@ -60,6 +60,7 @@ def suboptfolding(seq, energy_range=9.2448116325):
     folds = []
     probs = []
     energies = []
+    suboptfolds = []
     if len(output) >= 2:
         for i in range(2, len(output)):
             foldandenergy = output[i].split()
@@ -79,9 +80,10 @@ def suboptfolding(seq, energy_range=9.2448116325):
     
     for f,e,p in zip(folds,energies,probs):
         subopts.append((f,e,p))
+        suboptfolds.append(f)
 
     subopts = sorted(subopts, key=lambda x: x[1])
-    return subopts
+    return subopts,suboptfolds
 
 
 

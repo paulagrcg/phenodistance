@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastn</BlastOutput_program>
+  <BlastOutput_version>BLASTN 2.16.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>core_nt</BlastOutput_db>
+  <BlastOutput_query-ID>Query_3243309</BlastOutput_query-ID>
+  <BlastOutput_query-def>No definition line</BlastOutput_query-def>
+  <BlastOutput_query-len>24</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_sc-match>2</Parameters_sc-match>
+      <Parameters_sc-mismatch>-3</Parameters_sc-mismatch>
+      <Parameters_gap-open>5</Parameters_gap-open>
+      <Parameters_gap-extend>2</Parameters_gap-extend>
+      <Parameters_filter>L;m;</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_3243309</Iteration_query-ID>
+  <Iteration_query-def>No definition line</Iteration_query-def>
+  <Iteration_query-len>24</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1696221895|ref|XM_029729652.1|</Hit_id>
+  <Hit_def>PREDICTED: Salmo trutta calmin (clmn), transcript variant X1, mRNA</Hit_def>
+  <Hit_accession>XM_029729652</Hit_accession>
+  <Hit_len>5615</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.98951</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>23</Hsp_query-to>
+      <Hsp_hit-from>2038</Hsp_hit-from>
+      <Hsp_hit-to>2058</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>CTTTAGCTCAGTGGAGAGCAC</Hsp_qseq>
+      <Hsp_hseq>CTTTAGCTCAGTGGAGAGCAC</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1696221897|ref|XM_029729653.1|</Hit_id>
+  <Hit_def>PREDICTED: Salmo trutta calmin (clmn), transcript variant X2, mRNA</Hit_def>
+  <Hit_accession>XM_029729653</Hit_accession>
+  <Hit_len>5011</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.98951</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>23</Hsp_query-to>
+      <Hsp_hit-from>1434</Hsp_hit-from>
+      <Hsp_hit-to>1454</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>CTTTAGCTCAGTGGAGAGCAC</Hsp_qseq>
+      <Hsp_hseq>CTTTAGCTCAGTGGAGAGCAC</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|46358387|gb|AC115297.7|</Hit_id>
+  <Hit_def>Mus musculus BAC clone RP23-205H11 from chromosome 10, complete sequence</Hit_def>
+  <Hit_accession>AC115297</Hit_accession>
+  <Hit_len>171350</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.98951</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>24</Hsp_query-to>
+      <Hsp_hit-from>94509</Hsp_hit-from>
+      <Hsp_hit-to>94489</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>TTTAGCTCAGTGGAGAGCACT</Hsp_qseq>
+      <Hsp_hseq>TTTAGCTCAGTGGAGAGCACT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|301337119|gb|AC241716.2|</Hit_id>
+  <Hit_def>Rattus norvegicus Y Chr BAC RNECO-54L04 (Amplicon Express Rat SHR-Akr (EcoR1 Digest) BAC library) complete sequence</Hit_def>
+  <Hit_accession>AC241716</Hit_accession>
+  <Hit_len>139488</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.98951</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>24</Hsp_query-to>
+      <Hsp_hit-from>23961</Hsp_hit-from>
+      <Hsp_hit-to>23981</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>TTTAGCTCAGTGGAGAGCACT</Hsp_qseq>
+      <Hsp_hseq>TTTAGCTCAGTGGAGAGCACT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|324959684|gb|AC242584.6|</Hit_id>
+  <Hit_def>Rattus norvegicus Y Chr BAC RNECO-233L20 (Amplicon Express Rat SHR-Akr (EcoR1 Digest) BAC library) complete sequence</Hit_def>
+  <Hit_accession>AC242584</Hit_accession>
+  <Hit_len>147419</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.98951</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>24</Hsp_query-to>
+      <Hsp_hit-from>58532</Hsp_hit-from>
+      <Hsp_hit-to>58512</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>TTTAGCTCAGTGGAGAGCACT</Hsp_qseq>
+      <Hsp_hseq>TTTAGCTCAGTGGAGAGCACT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|308387641|gb|AC241700.3|</Hit_id>
+  <Hit_def>Rattus norvegicus Y Chr BAC RNAEX-52L15 (Amplicon Express Rat SHR-Akr BAC library) complete sequence</Hit_def>
+  <Hit_accession>AC241700</Hit_accession>
+  <Hit_len>182990</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.98951</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>24</Hsp_query-to>
+      <Hsp_hit-from>95272</Hsp_hit-from>
+      <Hsp_hit-to>95292</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>TTTAGCTCAGTGGAGAGCACT</Hsp_qseq>
+      <Hsp_hseq>TTTAGCTCAGTGGAGAGCACT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|2173938645|ref|XM_014195086.2|</Hit_id>
+  <Hit_def>PREDICTED: Salmo salar calmin-like (LOC106602440), mRNA</Hit_def>
+  <Hit_accession>XM_014195086</Hit_accession>
+  <Hit_len>5649</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.98951</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>23</Hsp_query-to>
+      <Hsp_hit-from>2130</Hsp_hit-from>
+      <Hsp_hit-to>2150</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>CTTTAGCTCAGTGGAGAGCAC</Hsp_qseq>
+      <Hsp_hseq>CTTTAGCTCAGTGGAGAGCAC</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>111347470</Statistics_db-num>
+      <Statistics_db-len>1457433627</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.41</Statistics_kappa>
+      <Statistics_lambda>0.625</Statistics_lambda>
+      <Statistics_entropy>0.78</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

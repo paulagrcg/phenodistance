@@ -1,0 +1,270 @@
+Sequence: gi|2128079461|ref|XM_016177571.3| PREDICTED: Drosophila simulans uncharacterized LOC6729725 (LOC6729725), transcript variant X3, mRNA
+Length: 1335
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|1189085103|ref|XM_020955213.1| PREDICTED: Drosophila serrata uncharacterized LOC110186161 (LOC110186161), transcript variant X2, mRNA
+Length: 1608
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|2128079460|ref|XM_016177570.3| PREDICTED: Drosophila simulans uncharacterized LOC6729725 (LOC6729725), transcript variant X1, mRNA
+Length: 1179
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|1934913735|ref|XM_037856315.1| PREDICTED: Drosophila subpulchrella uncharacterized LOC119548768 (LOC119548768), mRNA
+Length: 602
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|1189085101|ref|XM_020955212.1| PREDICTED: Drosophila serrata uncharacterized LOC110186161 (LOC110186161), transcript variant X1, mRNA
+Length: 1421
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|1829505661|ref|XM_033309337.1| PREDICTED: Drosophila mauritiana uncharacterized LOC117144255 (LOC117144255), transcript variant X3, mRNA
+Length: 1591
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|1847804526|ref|XM_034806002.1| PREDICTED: Drosophila subobscura uncharacterized LOC117897274 (LOC117897274), transcript variant X1, mRNA
+Length: 1784
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|2744953506|ref|XM_017080095.3| PREDICTED: Drosophila suzukii uncharacterized LOC108014074 (LOC108014074), mRNA
+Length: 1192
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|1969792348|ref|XM_039294679.1| PREDICTED: Drosophila simulans uncharacterized LOC6729725 (LOC6729725), transcript variant X2, mRNA
+Length: 1237
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|1988892156|ref|XM_039636776.1| PREDICTED: Drosophila santomea uncharacterized LOC120452521 (LOC120452521), mRNA
+Length: 1437
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|2868167180|ref|XR_011445144.1| PREDICTED: Drosophila kikkawai uncharacterized protein (LOC108078848), transcript variant X2, misc_RNA
+Length: 1489
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|17945981|gb|AY071413.1| Drosophila melanogaster RE49668 full length cDNA
+Length: 3498
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|1976352974|ref|XM_002098897.3| PREDICTED: Drosophila yakuba uncharacterized LOC6538409 (LOC6538409), transcript variant X1, mRNA
+Length: 1199
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|2868167179|ref|XM_017172946.2| PREDICTED: Drosophila kikkawai uncharacterized protein (LOC108078848), transcript variant X1, mRNA
+Length: 1548
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|1829505657|ref|XM_033309335.1| PREDICTED: Drosophila mauritiana uncharacterized LOC117144255 (LOC117144255), transcript variant X1, mRNA
+Length: 1745
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|2868167182|ref|XM_070286667.1| PREDICTED: Drosophila kikkawai uncharacterized protein (LOC108078848), transcript variant X4, mRNA
+Length: 1417
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|220948875|gb|FJ632722.1| Synthetic construct Drosophila melanogaster clone BO13216 encodes CG31323-RA
+Length: 541
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|13129412|gb|AC008210.4|AC008210 Drosophila melanogaster, chromosome 3R, region 97A-97A, BAC clone BACR08G22, complete sequence
+Length: 153648
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|442621239|ref|NM_143210.4| Drosophila melanogaster uncharacterized protein, transcript variant A (CG31323), mRNA
+Length: 3489
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|2098539076|ref|XM_043795438.1| PREDICTED: Drosophila teissieri uncharacterized LOC122618846 (LOC122618846), mRNA
+Length: 1562
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|50872354|gb|AC008211.10| Drosophila melanogaster clone BACR08N16, complete sequence
+Length: 181904
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|1829505663|ref|XM_033309338.1| PREDICTED: Drosophila mauritiana uncharacterized LOC117144255 (LOC117144255), transcript variant X4, mRNA
+Length: 1590
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|386766528|ref|NM_001260381.1| Drosophila melanogaster uncharacterized protein, transcript variant B (CG31323), mRNA
+Length: 1033
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|1818142455|ref|XM_002041324.2| PREDICTED: Drosophila sechellia uncharacterized LOC6617032 (LOC6617032), partial mRNA
+Length: 2215
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|1829505659|ref|XM_033309336.1| PREDICTED: Drosophila mauritiana uncharacterized LOC117144255 (LOC117144255), transcript variant X2, mRNA
+Length: 1778
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|1847804528|ref|XM_034806003.1| PREDICTED: Drosophila subobscura uncharacterized LOC117897274 (LOC117897274), transcript variant X2, mRNA
+Length: 1888
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|220957711|gb|FJ637140.1| Synthetic construct Drosophila melanogaster clone BS12316 encodes CG31323-RA
+Length: 542
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|2868167181|ref|XM_017172955.2| PREDICTED: Drosophila kikkawai uncharacterized protein (LOC108078848), transcript variant X3, mRNA
+Length: 1519
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|2085150331|ref|XM_039375476.2| PREDICTED: Drosophila yakuba uncharacterized LOC6538409 (LOC6538409), transcript variant X2, mRNA
+Length: 1265
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+
+Sequence: gi|1839725070|ref|XM_034275078.1| PREDICTED: Drosophila guanche uncharacterized LOC117585554 (LOC117585554), mRNA
+Length: 919
+Score: 42.0
+E-value: 3.99114
+Alignment:
+GCAGAGCTGCAGCGATGCGGA
+|||||||||||||||||||||
+GCAGAGCTGCAGCGATGCGGA
+

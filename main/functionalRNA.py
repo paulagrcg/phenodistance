@@ -128,7 +128,7 @@ if __name__ == "__main__":
     prob1 = defaultdict(float)
     for seqname, seq in sequences.items():
         print(seqname)
-        output = suboptfolding(seq, energy_range)
+        output, outfolds= suboptfolding(seq, energy_range)
         if output is None:
             continue
         folds[(seqname,seq)] = [output[0][0], output[1][0]]

@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastn</BlastOutput_program>
+  <BlastOutput_version>BLASTN 2.16.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>core_nt</BlastOutput_db>
+  <BlastOutput_query-ID>Query_3224265</BlastOutput_query-ID>
+  <BlastOutput_query-def>No definition line</BlastOutput_query-def>
+  <BlastOutput_query-len>21</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_sc-match>2</Parameters_sc-match>
+      <Parameters_sc-mismatch>-3</Parameters_sc-mismatch>
+      <Parameters_gap-open>5</Parameters_gap-open>
+      <Parameters_gap-extend>2</Parameters_gap-extend>
+      <Parameters_filter>L;m;</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_3224265</Iteration_query-ID>
+  <Iteration_query-def>No definition line</Iteration_query-def>
+  <Iteration_query-len>21</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1509806613|ref|XM_015158369.2|</Hit_id>
+  <Hit_def>PREDICTED: Drosophila erecta ubiquitin carboxyl-terminal hydrolase 47 (LOC6544678), transcript variant X1, mRNA</Hit_def>
+  <Hit_accession>XM_015158369</Hit_accession>
+  <Hit_len>5115</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.99114</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>21</Hsp_query-to>
+      <Hsp_hit-from>1190</Hsp_hit-from>
+      <Hsp_hit-to>1170</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>AAGGAGCATCGTCCACCGGTG</Hsp_qseq>
+      <Hsp_hseq>AAGGAGCATCGTCCACCGGTG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1829498948|ref|XM_033305672.1|</Hit_id>
+  <Hit_def>PREDICTED: Drosophila mauritiana ubiquitin carboxyl-terminal hydrolase 47 (LOC117141933), transcript variant X2, mRNA</Hit_def>
+  <Hit_accession>XM_033305672</Hit_accession>
+  <Hit_len>5268</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.99114</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>21</Hsp_query-to>
+      <Hsp_hit-from>967</Hsp_hit-from>
+      <Hsp_hit-to>947</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>AAGGAGCATCGTCCACCGGTG</Hsp_qseq>
+      <Hsp_hseq>AAGGAGCATCGTCCACCGGTG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|2128067563|ref|XM_016170905.3|</Hit_id>
+  <Hit_def>PREDICTED: Drosophila simulans ubiquitin carboxyl-terminal hydrolase 47 (LOC6736907), transcript variant X1, mRNA</Hit_def>
+  <Hit_accession>XM_016170905</Hit_accession>
+  <Hit_len>5100</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.99114</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>21</Hsp_query-to>
+      <Hsp_hit-from>1171</Hsp_hit-from>
+      <Hsp_hit-to>1151</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>AAGGAGCATCGTCCACCGGTG</Hsp_qseq>
+      <Hsp_hseq>AAGGAGCATCGTCCACCGGTG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1829498946|ref|XM_033305671.1|</Hit_id>
+  <Hit_def>PREDICTED: Drosophila mauritiana ubiquitin carboxyl-terminal hydrolase 47 (LOC117141933), transcript variant X1, mRNA</Hit_def>
+  <Hit_accession>XM_033305671</Hit_accession>
+  <Hit_len>5451</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.99114</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>21</Hsp_query-to>
+      <Hsp_hit-from>1150</Hsp_hit-from>
+      <Hsp_hit-to>1130</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>AAGGAGCATCGTCCACCGGTG</Hsp_qseq>
+      <Hsp_hseq>AAGGAGCATCGTCCACCGGTG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|665409939|ref|NM_168129.4|</Hit_id>
+  <Hit_def>Drosophila melanogaster ubiquitin specific protease 47, transcript variant A (Usp47), mRNA</Hit_def>
+  <Hit_accession>NM_168129</Hit_accession>
+  <Hit_len>5475</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.99114</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>21</Hsp_query-to>
+      <Hsp_hit-from>1152</Hsp_hit-from>
+      <Hsp_hit-to>1132</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>AAGGAGCATCGTCCACCGGTG</Hsp_qseq>
+      <Hsp_hseq>AAGGAGCATCGTCCACCGGTG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|1509806615|ref|XM_015158370.2|</Hit_id>
+  <Hit_def>PREDICTED: Drosophila erecta ubiquitin carboxyl-terminal hydrolase 47 (LOC6544678), transcript variant X2, mRNA</Hit_def>
+  <Hit_accession>XM_015158370</Hit_accession>
+  <Hit_len>4969</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.99114</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>21</Hsp_query-to>
+      <Hsp_hit-from>1044</Hsp_hit-from>
+      <Hsp_hit-to>1024</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>AAGGAGCATCGTCCACCGGTG</Hsp_qseq>
+      <Hsp_hseq>AAGGAGCATCGTCCACCGGTG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|2128067565|ref|XM_016170904.3|</Hit_id>
+  <Hit_def>PREDICTED: Drosophila simulans ubiquitin carboxyl-terminal hydrolase 47 (LOC6736907), transcript variant X2, mRNA</Hit_def>
+  <Hit_accession>XM_016170904</Hit_accession>
+  <Hit_len>4954</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.99114</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>21</Hsp_query-to>
+      <Hsp_hit-from>1025</Hsp_hit-from>
+      <Hsp_hit-to>1005</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>AAGGAGCATCGTCCACCGGTG</Hsp_qseq>
+      <Hsp_hseq>AAGGAGCATCGTCCACCGGTG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|1509806616|ref|XM_026977546.1|</Hit_id>
+  <Hit_def>PREDICTED: Drosophila erecta ubiquitin carboxyl-terminal hydrolase 47 (LOC6544678), transcript variant X3, mRNA</Hit_def>
+  <Hit_accession>XM_026977546</Hit_accession>
+  <Hit_len>5130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.99114</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>21</Hsp_query-to>
+      <Hsp_hit-from>1205</Hsp_hit-from>
+      <Hsp_hit-to>1185</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>AAGGAGCATCGTCCACCGGTG</Hsp_qseq>
+      <Hsp_hseq>AAGGAGCATCGTCCACCGGTG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|21397247|gb|AC093500.2|</Hit_id>
+  <Hit_def>Drosophila melanogaster 3L BAC RP98-29P5 (Roswell Park Cancer Institute Drosophila BAC Library) complete sequence</Hit_def>
+  <Hit_accession>AC093500</Hit_accession>
+  <Hit_len>173558</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.99114</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>21</Hsp_query-to>
+      <Hsp_hit-from>58539</Hsp_hit-from>
+      <Hsp_hit-to>58519</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>AAGGAGCATCGTCCACCGGTG</Hsp_qseq>
+      <Hsp_hseq>AAGGAGCATCGTCCACCGGTG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|1818139172|ref|XM_032720100.1|</Hit_id>
+  <Hit_def>PREDICTED: Drosophila sechellia ubiquitin carboxyl-terminal hydrolase 47 (LOC6610904), transcript variant X2, mRNA</Hit_def>
+  <Hit_accession>XM_032720100</Hit_accession>
+  <Hit_len>4908</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.99114</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>21</Hsp_query-to>
+      <Hsp_hit-from>969</Hsp_hit-from>
+      <Hsp_hit-to>949</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>AAGGAGCATCGTCCACCGGTG</Hsp_qseq>
+      <Hsp_hseq>AAGGAGCATCGTCCACCGGTG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|28381000|gb|BT003784.1|</Hit_id>
+  <Hit_def>Drosophila melanogaster LD26783 full insert cDNA</Hit_def>
+  <Hit_accession>BT003784</Hit_accession>
+  <Hit_len>5006</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.99114</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>21</Hsp_query-to>
+      <Hsp_hit-from>1132</Hsp_hit-from>
+      <Hsp_hit-to>1112</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>AAGGAGCATCGTCCACCGGTG</Hsp_qseq>
+      <Hsp_hseq>AAGGAGCATCGTCCACCGGTG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|442630410|ref|NM_079213.4|</Hit_id>
+  <Hit_def>Drosophila melanogaster ubiquitin specific protease 47, transcript variant B (Usp47), mRNA</Hit_def>
+  <Hit_accession>NM_079213</Hit_accession>
+  <Hit_len>4835</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.99114</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>21</Hsp_query-to>
+      <Hsp_hit-from>979</Hsp_hit-from>
+      <Hsp_hit-to>959</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>AAGGAGCATCGTCCACCGGTG</Hsp_qseq>
+      <Hsp_hseq>AAGGAGCATCGTCCACCGGTG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|1818139171|ref|XM_002035430.2|</Hit_id>
+  <Hit_def>PREDICTED: Drosophila sechellia ubiquitin carboxyl-terminal hydrolase 47 (LOC6610904), transcript variant X1, mRNA</Hit_def>
+  <Hit_accession>XM_002035430</Hit_accession>
+  <Hit_len>5079</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.157</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>3.99114</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>21</Hsp_query-to>
+      <Hsp_hit-from>1140</Hsp_hit-from>
+      <Hsp_hit-to>1120</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>21</Hsp_align-len>
+      <Hsp_qseq>AAGGAGCATCGTCCACCGGTG</Hsp_qseq>
+      <Hsp_hseq>AAGGAGCATCGTCCACCGGTG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>111347470</Statistics_db-num>
+      <Statistics_db-len>1457433627</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.41</Statistics_kappa>
+      <Statistics_lambda>0.625</Statistics_lambda>
+      <Statistics_entropy>0.78</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

@@ -1,0 +1,63 @@
+Sequence: gi|1696221895|ref|XM_029729652.1| PREDICTED: Salmo trutta calmin (clmn), transcript variant X1, mRNA
+Length: 5615
+Score: 42.0
+E-value: 3.98951
+Alignment:
+CTTTAGCTCAGTGGAGAGCAC
+|||||||||||||||||||||
+CTTTAGCTCAGTGGAGAGCAC
+
+Sequence: gi|1696221897|ref|XM_029729653.1| PREDICTED: Salmo trutta calmin (clmn), transcript variant X2, mRNA
+Length: 5011
+Score: 42.0
+E-value: 3.98951
+Alignment:
+CTTTAGCTCAGTGGAGAGCAC
+|||||||||||||||||||||
+CTTTAGCTCAGTGGAGAGCAC
+
+Sequence: gi|46358387|gb|AC115297.7| Mus musculus BAC clone RP23-205H11 from chromosome 10, complete sequence
+Length: 171350
+Score: 42.0
+E-value: 3.98951
+Alignment:
+TTTAGCTCAGTGGAGAGCACT
+|||||||||||||||||||||
+TTTAGCTCAGTGGAGAGCACT
+
+Sequence: gi|301337119|gb|AC241716.2| Rattus norvegicus Y Chr BAC RNECO-54L04 (Amplicon Express Rat SHR-Akr (EcoR1 Digest) BAC library) complete sequence
+Length: 139488
+Score: 42.0
+E-value: 3.98951
+Alignment:
+TTTAGCTCAGTGGAGAGCACT
+|||||||||||||||||||||
+TTTAGCTCAGTGGAGAGCACT
+
+Sequence: gi|324959684|gb|AC242584.6| Rattus norvegicus Y Chr BAC RNECO-233L20 (Amplicon Express Rat SHR-Akr (EcoR1 Digest) BAC library) complete sequence
+Length: 147419
+Score: 42.0
+E-value: 3.98951
+Alignment:
+TTTAGCTCAGTGGAGAGCACT
+|||||||||||||||||||||
+TTTAGCTCAGTGGAGAGCACT
+
+Sequence: gi|308387641|gb|AC241700.3| Rattus norvegicus Y Chr BAC RNAEX-52L15 (Amplicon Express Rat SHR-Akr BAC library) complete sequence
+Length: 182990
+Score: 42.0
+E-value: 3.98951
+Alignment:
+TTTAGCTCAGTGGAGAGCACT
+|||||||||||||||||||||
+TTTAGCTCAGTGGAGAGCACT
+
+Sequence: gi|2173938645|ref|XM_014195086.2| PREDICTED: Salmo salar calmin-like (LOC106602440), mRNA
+Length: 5649
+Score: 42.0
+E-value: 3.98951
+Alignment:
+CTTTAGCTCAGTGGAGAGCAC
+|||||||||||||||||||||
+CTTTAGCTCAGTGGAGAGCAC
+

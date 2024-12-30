@@ -1,0 +1,2579 @@
+No more mutation choices at site 0
+Match found: 0
+Match found: 1
+No more mutation choices at site 2
+Match found: 1
+Match found: 2
+Match found: 2
+Match found: 3
+Match found: 3
+Match found: 4
+Match found: 4
+Match found: 5
+Match found: 5
+Match found: 6
+No more mutation choices at site 8
+Match found: 6
+Match found: 7
+Match found: 7
+Match found: 8
+Match found: 8
+Match found: 9
+Match found: 9
+Match found: 10
+Match found: 10
+Match found: 11
+Match found: 11
+Match found: 12
+No more mutation choices at site 15
+Match found: 12
+Match found: 13
+Match found: 13
+Match found: 14
+No more mutation choices at site 18
+Match found: 14
+Match found: 15
+Match found: 15
+Match found: 16
+Match found: 16
+Match found: 17
+Match found: 17
+Match found: 18
+Match found: 18
+Match found: 19
+Match found: 19
+Match found: 20
+Match found: 20
+Match found: 21
+No more mutation choices at site 5
+Match found: 21
+Match found: 22
+Match found: 22
+Match found: 23
+Match found: 23
+Match found: 24
+Match found: 24
+Match found: 25
+No more mutation choices at site 10
+Match found: 25
+Match found: 26
+No more mutation choices at site 12
+Match found: 26
+Match found: 27
+No more mutation choices at site 14
+Match found: 27
+Match found: 28
+Match found: 28
+Match found: 29
+Match found: 29
+Match found: 30
+No more mutation choices at site 18
+Match found: 30
+Match found: 31
+No more mutation choices at site 20
+Match found: 31
+Match found: 32
+Match found: 32
+Match found: 33
+Match found: 33
+Match found: 34
+Match found: 34
+Match found: 35
+Match found: 35
+Match found: 36
+Match found: 36
+Match found: 37
+Match found: 37
+Match found: 38
+No more mutation choices at site 7
+Match found: 38
+Match found: 39
+No more mutation choices at site 9
+Match found: 39
+Match found: 40
+Match found: 40
+Match found: 41
+Match found: 41
+Match found: 42
+Match found: 42
+Match found: 43
+Match found: 43
+Match found: 44
+No more mutation choices at site 15
+Match found: 44
+Match found: 45
+Match found: 45
+Match found: 46
+Match found: 46
+Match found: 47
+No more mutation choices at site 19
+Match found: 47
+Match found: 48
+No more mutation choices at site 0
+Match found: 48
+Match found: 49
+Match found: 49
+Match found: 50
+Match found: 50
+Match found: 51
+No more mutation choices at site 4
+Match found: 51
+Match found: 52
+No more mutation choices at site 6
+Match found: 52
+Match found: 53
+No more mutation choices at site 8
+No more mutation choices at site 9
+No more mutation choices at site 10
+Match found: 53
+Match found: 54
+Match found: 54
+Match found: 55
+Match found: 55
+Match found: 56
+Match found: 56
+Match found: 57
+Match found: 57
+Match found: 58
+Match found: 58
+Match found: 59
+Match found: 59
+Match found: 60
+Match found: 60
+Match found: 61
+Match found: 61
+Match found: 62
+Match found: 62
+Match found: 63
+No more mutation choices at site 0
+Match found: 63
+Match found: 64
+No more mutation choices at site 2
+Match found: 64
+Match found: 65
+Match found: 65
+Match found: 66
+No more mutation choices at site 5
+Match found: 66
+Match found: 67
+Match found: 67
+Match found: 68
+Match found: 68
+Match found: 69
+No more mutation choices at site 9
+Match found: 69
+Match found: 70
+No more mutation choices at site 11
+Match found: 70
+Match found: 71
+Match found: 71
+Match found: 72
+Match found: 72
+Match found: 73
+Match found: 73
+Match found: 74
+Match found: 74
+Match found: 75
+Match found: 75
+Match found: 76
+Match found: 76
+Match found: 77
+Match found: 77
+Match found: 78
+Match found: 78
+Match found: 79
+No more mutation choices at site 0
+Match found: 79
+Match found: 80
+Match found: 80
+Match found: 81
+No more mutation choices at site 3
+Match found: 81
+Match found: 82
+Match found: 82
+Match found: 83
+Match found: 83
+Match found: 84
+Match found: 84
+Match found: 85
+No more mutation choices at site 8
+Match found: 85
+Match found: 86
+No more mutation choices at site 10
+Match found: 86
+Match found: 87
+No more mutation choices at site 12
+Match found: 87
+Match found: 88
+No more mutation choices at site 14
+No more mutation choices at site 15
+No more mutation choices at site 16
+Match found: 88
+Match found: 89
+Match found: 89
+Match found: 90
+No more mutation choices at site 19
+Match found: 90
+Match found: 91
+Match found: 91
+Match found: 92
+No more mutation choices at site 1
+No more mutation choices at site 2
+No more mutation choices at site 3
+No more mutation choices at site 4
+No more mutation choices at site 5
+Match found: 92
+Match found: 93
+Match found: 93
+Match found: 94
+No more mutation choices at site 8
+Match found: 94
+Match found: 95
+Match found: 95
+Match found: 96
+Match found: 96
+Match found: 97
+Match found: 97
+Match found: 98
+Match found: 98
+Match found: 99
+Match found: 99
+Match found: 100
+Match found: 100
+Match found: 101
+Match found: 101
+Match found: 102
+Match found: 102
+Match found: 103
+No more mutation choices at site 18
+Match found: 103
+Match found: 104
+Match found: 104
+Match found: 105
+Match found: 105
+Match found: 106
+Match found: 106
+Match found: 107
+Match found: 107
+Match found: 108
+No more mutation choices at site 3
+No more mutation choices at site 4
+Match found: 108
+Match found: 109
+Match found: 109
+Match found: 110
+No more mutation choices at site 7
+Match found: 110
+Match found: 111
+Match found: 111
+Match found: 112
+Match found: 112
+Match found: 113
+Match found: 113
+Match found: 114
+Match found: 114
+Match found: 115
+Match found: 115
+Match found: 116
+No more mutation choices at site 14
+Match found: 116
+Match found: 117
+No more mutation choices at site 16
+Match found: 117
+Match found: 118
+No more mutation choices at site 18
+Match found: 118
+Match found: 119
+Match found: 119
+Match found: 120
+Match found: 120
+Match found: 121
+No more mutation choices at site 1
+Match found: 121
+Match found: 122
+No more mutation choices at site 3
+No more mutation choices at site 4
+Match found: 122
+Match found: 123
+Match found: 123
+Match found: 124
+No more mutation choices at site 7
+No more mutation choices at site 8
+Match found: 124
+Match found: 125
+Match found: 125
+Match found: 126
+Match found: 126
+Match found: 127
+Match found: 127
+Match found: 128
+Match found: 128
+Match found: 129
+No more mutation choices at site 14
+No more mutation choices at site 15
+Match found: 129
+Match found: 130
+Match found: 130
+Match found: 131
+Match found: 131
+Match found: 132
+No more mutation choices at site 19
+Match found: 132
+Match found: 133
+No more mutation choices at site 0
+No more mutation choices at site 1
+No more mutation choices at site 2
+No more mutation choices at site 3
+Match found: 133
+Match found: 134
+No more mutation choices at site 5
+Match found: 134
+Match found: 135
+No more mutation choices at site 7
+Match found: 135
+Match found: 136
+No more mutation choices at site 9
+Match found: 136
+Match found: 137
+Match found: 137
+Match found: 138
+No more mutation choices at site 12
+Match found: 138
+Match found: 139
+No more mutation choices at site 14
+No more mutation choices at site 15
+No more mutation choices at site 16
+Match found: 139
+Match found: 140
+Match found: 140
+Match found: 141
+Match found: 141
+Match found: 142
+No more mutation choices at site 20
+Match found: 142
+Match found: 143
+Match found: 143
+Match found: 144
+Match found: 144
+Match found: 145
+Match found: 145
+Match found: 146
+Match found: 146
+Match found: 147
+No more mutation choices at site 5
+Match found: 147
+Match found: 148
+No more mutation choices at site 7
+Match found: 148
+Match found: 149
+Match found: 149
+Match found: 150
+Match found: 150
+Match found: 151
+Match found: 151
+Match found: 152
+Match found: 152
+Match found: 153
+Match found: 153
+Match found: 154
+No more mutation choices at site 14
+No more mutation choices at site 15
+Match found: 154
+Match found: 155
+No more mutation choices at site 17
+No more mutation choices at site 18
+Match found: 155
+Match found: 156
+No more mutation choices at site 20
+No more mutation choices at site 0
+Match found: 156
+Match found: 157
+Match found: 157
+Match found: 158
+No more mutation choices at site 3
+No more mutation choices at site 4
+Match found: 158
+Match found: 159
+Match found: 159
+Match found: 160
+No more mutation choices at site 7
+Match found: 160
+Match found: 161
+Match found: 161
+Match found: 162
+Match found: 162
+Match found: 163
+Match found: 163
+Match found: 164
+Match found: 164
+Match found: 165
+No more mutation choices at site 13
+Match found: 165
+Match found: 166
+Match found: 166
+Match found: 167
+No more mutation choices at site 16
+No more mutation choices at site 17
+Match found: 167
+Match found: 168
+No more mutation choices at site 19
+Match found: 168
+Match found: 169
+No more mutation choices at site 0
+No more mutation choices at site 1
+Match found: 169
+Match found: 170
+Match found: 170
+Match found: 171
+No more mutation choices at site 4
+No more mutation choices at site 5
+No more mutation choices at site 6
+No more mutation choices at site 7
+Match found: 171
+Match found: 172
+Match found: 172
+Match found: 173
+Match found: 173
+Match found: 174
+Match found: 174
+Match found: 175
+No more mutation choices at site 12
+Match found: 175
+Match found: 176
+Match found: 176
+Match found: 177
+No more mutation choices at site 15
+Match found: 177
+Match found: 178
+Match found: 178
+Match found: 179
+Match found: 179
+Match found: 180
+No more mutation choices at site 19
+Match found: 180
+Match found: 181
+No more mutation choices at site 0
+Match found: 181
+Match found: 182
+No more mutation choices at site 2
+No more mutation choices at site 3
+No more mutation choices at site 4
+Match found: 182
+Match found: 183
+Match found: 183
+Match found: 184
+No more mutation choices at site 7
+Match found: 184
+Match found: 185
+Match found: 185
+Match found: 186
+Match found: 186
+Match found: 187
+Match found: 187
+Match found: 188
+Match found: 188
+Match found: 189
+No more mutation choices at site 13
+Match found: 189
+Match found: 190
+Match found: 190
+Match found: 191
+Match found: 191
+Match found: 192
+No more mutation choices at site 17
+No more mutation choices at site 18
+Match found: 192
+Match found: 193
+No more mutation choices at site 20
+Match found: 193
+Match found: 194
+Match found: 194
+Match found: 195
+Match found: 195
+Match found: 196
+Match found: 196
+Match found: 197
+Match found: 197
+Match found: 198
+Match found: 198
+Match found: 199
+Match found: 199
+Match found: 200
+Match found: 200
+Match found: 201
+Match found: 201
+Match found: 202
+Match found: 202
+Match found: 203
+Match found: 203
+Match found: 204
+Match found: 204
+Match found: 205
+Match found: 205
+Match found: 206
+No more mutation choices at site 13
+Match found: 206
+Match found: 207
+Match found: 207
+Match found: 208
+No more mutation choices at site 16
+Match found: 208
+Match found: 209
+Match found: 209
+Match found: 210
+Match found: 210
+Match found: 211
+Match found: 211
+Match found: 212
+Match found: 212
+Match found: 213
+Match found: 213
+Match found: 214
+No more mutation choices at site 2
+Match found: 214
+Match found: 215
+No more mutation choices at site 4
+Match found: 215
+Match found: 216
+No more mutation choices at site 6
+Match found: 216
+Match found: 217
+Match found: 217
+Match found: 218
+No more mutation choices at site 9
+Match found: 218
+Match found: 219
+Match found: 219
+Match found: 220
+No more mutation choices at site 12
+Match found: 220
+Match found: 221
+No more mutation choices at site 14
+Match found: 221
+Match found: 222
+Match found: 222
+Match found: 223
+Match found: 223
+Match found: 224
+Match found: 224
+Match found: 225
+No more mutation choices at site 19
+Match found: 225
+Match found: 226
+No more mutation choices at site 0
+Match found: 226
+Match found: 227
+No more mutation choices at site 2
+No more mutation choices at site 3
+No more mutation choices at site 4
+Match found: 227
+Match found: 228
+No more mutation choices at site 6
+Match found: 228
+Match found: 229
+No more mutation choices at site 8
+Match found: 229
+Match found: 230
+Match found: 230
+Match found: 231
+Match found: 231
+Match found: 232
+No more mutation choices at site 12
+Match found: 232
+Match found: 233
+No more mutation choices at site 14
+Match found: 233
+Match found: 234
+No more mutation choices at site 16
+Match found: 234
+Match found: 235
+No more mutation choices at site 18
+Match found: 235
+Match found: 236
+Match found: 236
+Match found: 237
+Match found: 237
+Match found: 238
+No more mutation choices at site 1
+No more mutation choices at site 2
+No more mutation choices at site 3
+No more mutation choices at site 4
+Match found: 238
+Match found: 239
+No more mutation choices at site 6
+Match found: 239
+Match found: 240
+Match found: 240
+Match found: 241
+Match found: 241
+Match found: 242
+Match found: 242
+Match found: 243
+Match found: 243
+Match found: 244
+Match found: 244
+Match found: 245
+Match found: 245
+Match found: 246
+No more mutation choices at site 14
+Match found: 246
+Match found: 247
+Match found: 247
+Match found: 248
+No more mutation choices at site 17
+Match found: 248
+Match found: 249
+No more mutation choices at site 19
+Match found: 249
+Match found: 250
+Match found: 250
+Match found: 251
+Match found: 251
+Match found: 252
+No more mutation choices at site 2
+Match found: 252
+Match found: 253
+Match found: 253
+Match found: 254
+Match found: 254
+Match found: 255
+No more mutation choices at site 6
+No more mutation choices at site 7
+Match found: 255
+Match found: 256
+Match found: 256
+Match found: 257
+Match found: 257
+Match found: 258
+Match found: 258
+Match found: 259
+Match found: 259
+Match found: 260
+Match found: 260
+Match found: 261
+No more mutation choices at site 14
+No more mutation choices at site 15
+No more mutation choices at site 16
+Match found: 261
+Match found: 262
+Match found: 262
+Match found: 263
+Match found: 263
+Match found: 264
+Match found: 264
+Match found: 265
+No more mutation choices at site 0
+No more mutation choices at site 1
+No more mutation choices at site 2
+Match found: 265
+Match found: 266
+Match found: 266
+Match found: 267
+Match found: 267
+Match found: 268
+Match found: 268
+Match found: 269
+Match found: 269
+Match found: 270
+No more mutation choices at site 8
+Match found: 270
+Match found: 271
+Match found: 271
+Match found: 272
+Match found: 272
+Match found: 273
+No more mutation choices at site 12
+Match found: 273
+Match found: 274
+No more mutation choices at site 14
+No more mutation choices at site 15
+No more mutation choices at site 16
+Match found: 274
+Match found: 275
+No more mutation choices at site 18
+Match found: 275
+Match found: 276
+Match found: 276
+Match found: 277
+No more mutation choices at site 0
+Match found: 277
+Match found: 278
+No more mutation choices at site 2
+No more mutation choices at site 3
+No more mutation choices at site 4
+Match found: 278
+Match found: 279
+Match found: 279
+Match found: 280
+Match found: 280
+Match found: 281
+Match found: 281
+Match found: 282
+Match found: 282
+Match found: 283
+Match found: 283
+Match found: 284
+Match found: 284
+Match found: 285
+Match found: 285
+Match found: 286
+Match found: 286
+Match found: 287
+Match found: 287
+Match found: 288
+Match found: 288
+Match found: 289
+Match found: 289
+Match found: 290
+Match found: 290
+Match found: 291
+Match found: 291
+Match found: 292
+No more mutation choices at site 19
+Match found: 292
+Match found: 293
+No more mutation choices at site 0
+Match found: 293
+Match found: 294
+No more mutation choices at site 2
+Match found: 294
+Match found: 295
+No more mutation choices at site 4
+No more mutation choices at site 5
+Match found: 295
+Match found: 296
+No more mutation choices at site 7
+No more mutation choices at site 8
+Match found: 296
+Match found: 297
+Match found: 297
+Match found: 298
+Match found: 298
+Match found: 299
+Match found: 299
+Match found: 300
+Match found: 300
+Match found: 301
+No more mutation choices at site 14
+Match found: 301
+Match found: 302
+No more mutation choices at site 16
+No more mutation choices at site 17
+Match found: 302
+Match found: 303
+Match found: 303
+Match found: 304
+No more mutation choices at site 20
+No more mutation choices at site 0
+No more mutation choices at site 1
+No more mutation choices at site 2
+Match found: 304
+Match found: 305
+No more mutation choices at site 4
+Match found: 305
+Match found: 306
+Match found: 306
+Match found: 307
+Match found: 307
+Match found: 308
+Match found: 308
+Match found: 309
+Match found: 309
+Match found: 310
+Match found: 310
+Match found: 311
+Match found: 311
+Match found: 312
+Match found: 312
+Match found: 313
+No more mutation choices at site 13
+No more mutation choices at site 14
+No more mutation choices at site 15
+Match found: 313
+Match found: 314
+Match found: 314
+Match found: 315
+Match found: 315
+Match found: 316
+Match found: 316
+Match found: 317
+Match found: 317
+Match found: 318
+Match found: 318
+Match found: 319
+Match found: 319
+Match found: 320
+No more mutation choices at site 2
+Match found: 320
+Match found: 321
+No more mutation choices at site 4
+Match found: 321
+Match found: 322
+Match found: 322
+Match found: 323
+No more mutation choices at site 7
+Match found: 323
+Match found: 324
+Match found: 324
+Match found: 325
+Match found: 325
+Match found: 326
+Match found: 326
+Match found: 327
+Match found: 327
+Match found: 328
+Match found: 328
+Match found: 329
+No more mutation choices at site 14
+No more mutation choices at site 15
+Match found: 329
+Match found: 330
+No more mutation choices at site 17
+No more mutation choices at site 18
+Match found: 330
+Match found: 331
+No more mutation choices at site 20
+Match found: 331
+Match found: 332
+Match found: 332
+Match found: 333
+No more mutation choices at site 2
+Match found: 333
+Match found: 334
+No more mutation choices at site 4
+No more mutation choices at site 5
+Match found: 334
+Match found: 335
+Match found: 335
+Match found: 336
+No more mutation choices at site 8
+Match found: 336
+Match found: 337
+Match found: 337
+Match found: 338
+Match found: 338
+Match found: 339
+Match found: 339
+Match found: 340
+Match found: 340
+Match found: 341
+Match found: 341
+Match found: 342
+Match found: 342
+Match found: 343
+Match found: 343
+Match found: 344
+Match found: 344
+Match found: 345
+Match found: 345
+Match found: 346
+No more mutation choices at site 19
+Match found: 346
+Match found: 347
+Match found: 347
+Match found: 348
+No more mutation choices at site 1
+No more mutation choices at site 2
+No more mutation choices at site 3
+Match found: 348
+Match found: 349
+No more mutation choices at site 5
+No more mutation choices at site 6
+No more mutation choices at site 7
+Match found: 349
+Match found: 350
+Match found: 350
+Match found: 351
+Match found: 351
+Match found: 352
+Match found: 352
+Match found: 353
+Match found: 353
+Match found: 354
+No more mutation choices at site 13
+Match found: 354
+Match found: 355
+Match found: 355
+Match found: 356
+Match found: 356
+Match found: 357
+No more mutation choices at site 17
+Match found: 357
+Match found: 358
+Match found: 358
+Match found: 359
+Match found: 359
+Match found: 360
+Match found: 360
+Match found: 361
+Match found: 361
+Match found: 362
+Match found: 362
+Match found: 363
+Match found: 363
+Match found: 364
+Match found: 364
+Match found: 365
+No more mutation choices at site 5
+Match found: 365
+Match found: 366
+Match found: 366
+Match found: 367
+No more mutation choices at site 8
+Match found: 367
+Match found: 368
+Match found: 368
+Match found: 369
+Match found: 369
+Match found: 370
+Match found: 370
+Match found: 371
+No more mutation choices at site 13
+No more mutation choices at site 14
+No more mutation choices at site 15
+Match found: 371
+Match found: 372
+No more mutation choices at site 17
+No more mutation choices at site 18
+No more mutation choices at site 19
+No more mutation choices at site 20
+Match found: 372
+Match found: 373
+Match found: 373
+Match found: 374
+Match found: 374
+Match found: 375
+Match found: 375
+Match found: 376
+No more mutation choices at site 4
+Match found: 376
+Match found: 377
+No more mutation choices at site 6
+Match found: 377
+Match found: 378
+No more mutation choices at site 8
+Match found: 378
+Match found: 379
+Match found: 379
+Match found: 380
+Match found: 380
+Match found: 381
+Match found: 381
+Match found: 382
+No more mutation choices at site 13
+Match found: 382
+Match found: 383
+No more mutation choices at site 15
+No more mutation choices at site 16
+Match found: 383
+Match found: 384
+No more mutation choices at site 18
+Match found: 384
+Match found: 385
+Match found: 385
+Match found: 386
+Match found: 386
+Match found: 387
+No more mutation choices at site 1
+No more mutation choices at site 2
+Match found: 387
+Match found: 388
+No more mutation choices at site 4
+Match found: 388
+Match found: 389
+Match found: 389
+Match found: 390
+No more mutation choices at site 7
+Match found: 390
+Match found: 391
+Match found: 391
+Match found: 392
+Match found: 392
+Match found: 393
+Match found: 393
+Match found: 394
+Match found: 394
+Match found: 395
+Match found: 395
+Match found: 396
+Match found: 396
+Match found: 397
+Match found: 397
+Match found: 398
+Match found: 398
+Match found: 399
+Match found: 399
+Match found: 400
+No more mutation choices at site 18
+Match found: 400
+Match found: 401
+Match found: 401
+Match found: 402
+No more mutation choices at site 0
+Match found: 402
+Match found: 403
+No more mutation choices at site 2
+Match found: 403
+Match found: 404
+Match found: 404
+Match found: 405
+No more mutation choices at site 5
+No more mutation choices at site 6
+Match found: 405
+Match found: 406
+No more mutation choices at site 8
+Match found: 406
+Match found: 407
+Match found: 407
+Match found: 408
+Match found: 408
+Match found: 409
+Match found: 409
+Match found: 410
+Match found: 410
+Match found: 411
+No more mutation choices at site 14
+Match found: 411
+Match found: 412
+Match found: 412
+Match found: 413
+No more mutation choices at site 17
+Match found: 413
+Match found: 414
+Match found: 414
+Match found: 415
+No more mutation choices at site 20
+Match found: 415
+Match found: 416
+Match found: 416
+Match found: 417
+No more mutation choices at site 2
+No more mutation choices at site 3
+Match found: 417
+Match found: 418
+No more mutation choices at site 5
+Match found: 418
+Match found: 419
+Match found: 419
+Match found: 420
+Match found: 420
+Match found: 421
+Match found: 421
+Match found: 422
+Match found: 422
+Match found: 423
+Match found: 423
+Match found: 424
+Match found: 424
+Match found: 425
+No more mutation choices at site 13
+Match found: 425
+Match found: 426
+No more mutation choices at site 15
+Match found: 426
+Match found: 427
+Match found: 427
+Match found: 428
+No more mutation choices at site 18
+Match found: 428
+Match found: 429
+Match found: 429
+Match found: 430
+Match found: 430
+Match found: 431
+No more mutation choices at site 1
+Match found: 431
+Match found: 432
+No more mutation choices at site 3
+No more mutation choices at site 4
+No more mutation choices at site 5
+Match found: 432
+Match found: 433
+No more mutation choices at site 7
+Match found: 433
+Match found: 434
+Match found: 434
+Match found: 435
+Match found: 435
+Match found: 436
+Match found: 436
+Match found: 437
+Match found: 437
+Match found: 438
+Match found: 438
+Match found: 439
+Match found: 439
+Match found: 440
+No more mutation choices at site 15
+Match found: 440
+Match found: 441
+Match found: 441
+Match found: 442
+No more mutation choices at site 18
+No more mutation choices at site 19
+Match found: 442
+Match found: 443
+No more mutation choices at site 0
+Match found: 443
+Match found: 444
+Match found: 444
+Match found: 445
+No more mutation choices at site 3
+Match found: 445
+Match found: 446
+No more mutation choices at site 5
+Match found: 446
+Match found: 447
+No more mutation choices at site 7
+No more mutation choices at site 8
+Match found: 447
+Match found: 448
+Match found: 448
+Match found: 449
+Match found: 449
+Match found: 450
+Match found: 450
+Match found: 451
+Match found: 451
+Match found: 452
+No more mutation choices at site 14
+No more mutation choices at site 15
+No more mutation choices at site 16
+No more mutation choices at site 17
+Match found: 452
+Match found: 453
+No more mutation choices at site 19
+Match found: 453
+Match found: 454
+No more mutation choices at site 0
+Match found: 454
+Match found: 455
+Match found: 455
+Match found: 456
+Match found: 456
+Match found: 457
+Match found: 457
+Match found: 458
+Match found: 458
+Match found: 459
+No more mutation choices at site 6
+Match found: 459
+Match found: 460
+No more mutation choices at site 8
+Match found: 460
+Match found: 461
+Match found: 461
+Match found: 462
+Match found: 462
+Match found: 463
+Match found: 463
+Match found: 464
+Match found: 464
+Match found: 465
+No more mutation choices at site 14
+No more mutation choices at site 15
+No more mutation choices at site 16
+Match found: 465
+Match found: 466
+No more mutation choices at site 18
+No more mutation choices at site 19
+Match found: 466
+Match found: 467
+No more mutation choices at site 0
+Match found: 467
+Match found: 468
+No more mutation choices at site 2
+Match found: 468
+Match found: 469
+No more mutation choices at site 4
+Match found: 469
+Match found: 470
+Match found: 470
+Match found: 471
+Match found: 471
+Match found: 472
+No more mutation choices at site 8
+Match found: 472
+Match found: 473
+Match found: 473
+Match found: 474
+Match found: 474
+Match found: 475
+Match found: 475
+Match found: 476
+Match found: 476
+Match found: 477
+Match found: 477
+Match found: 478
+No more mutation choices at site 15
+No more mutation choices at site 16
+Match found: 478
+Match found: 479
+Match found: 479
+Match found: 480
+No more mutation choices at site 19
+No more mutation choices at site 20
+No more mutation choices at site 0
+Match found: 480
+Match found: 481
+Match found: 481
+Match found: 482
+No more mutation choices at site 3
+No more mutation choices at site 4
+Match found: 482
+Match found: 483
+No more mutation choices at site 6
+No more mutation choices at site 7
+Match found: 483
+Match found: 484
+Match found: 484
+Match found: 485
+Match found: 485
+Match found: 486
+Match found: 486
+Match found: 487
+Match found: 487
+Match found: 488
+No more mutation choices at site 13
+Match found: 488
+Match found: 489
+Match found: 489
+Match found: 490
+No more mutation choices at site 16
+Match found: 490
+Match found: 491
+No more mutation choices at site 18
+Match found: 491
+Match found: 492
+Match found: 492
+Match found: 493
+Match found: 493
+Match found: 494
+No more mutation choices at site 1
+No more mutation choices at site 2
+No more mutation choices at site 3
+No more mutation choices at site 4
+Match found: 494
+Match found: 495
+No more mutation choices at site 6
+Match found: 495
+Match found: 496
+Match found: 496
+Match found: 497
+Match found: 497
+Match found: 498
+Match found: 498
+Match found: 499
+Match found: 499
+Match found: 500
+Match found: 500
+Match found: 501
+Match found: 501
+Match found: 502
+No more mutation choices at site 14
+Match found: 502
+Match found: 503
+Match found: 503
+Match found: 504
+No more mutation choices at site 17
+Match found: 504
+Match found: 505
+Match found: 505
+Match found: 506
+No more mutation choices at site 20
+Match found: 506
+Match found: 507
+No more mutation choices at site 1
+No more mutation choices at site 2
+Match found: 507
+Match found: 508
+No more mutation choices at site 4
+No more mutation choices at site 5
+No more mutation choices at site 6
+Match found: 508
+Match found: 509
+No more mutation choices at site 8
+Match found: 509
+Match found: 510
+Match found: 510
+Match found: 511
+Match found: 511
+Match found: 512
+Match found: 512
+Match found: 513
+Match found: 513
+Match found: 514
+Match found: 514
+Match found: 515
+Match found: 515
+Match found: 516
+Match found: 516
+Match found: 517
+No more mutation choices at site 17
+No more mutation choices at site 18
+Match found: 517
+Match found: 518
+Match found: 518
+Match found: 519
+Match found: 519
+Match found: 520
+Match found: 520
+Match found: 521
+No more mutation choices at site 2
+Match found: 521
+Match found: 522
+No more mutation choices at site 4
+Match found: 522
+Match found: 523
+No more mutation choices at site 6
+No more mutation choices at site 7
+Match found: 523
+Match found: 524
+No more mutation choices at site 9
+Match found: 524
+Match found: 525
+Match found: 525
+Match found: 526
+Match found: 526
+Match found: 527
+No more mutation choices at site 13
+Match found: 527
+Match found: 528
+No more mutation choices at site 15
+No more mutation choices at site 16
+Match found: 528
+Match found: 529
+No more mutation choices at site 18
+Match found: 529
+Match found: 530
+No more mutation choices at site 20
+Match found: 530
+Match found: 531
+Match found: 531
+Match found: 532
+Match found: 532
+Match found: 533
+Match found: 533
+Match found: 534
+No more mutation choices at site 4
+Match found: 534
+Match found: 535
+No more mutation choices at site 6
+Match found: 535
+Match found: 536
+No more mutation choices at site 8
+Match found: 536
+Match found: 537
+Match found: 537
+Match found: 538
+Match found: 538
+Match found: 539
+Match found: 539
+Match found: 540
+No more mutation choices at site 13
+No more mutation choices at site 14
+Match found: 540
+Match found: 541
+Match found: 541
+Match found: 542
+Match found: 542
+Match found: 543
+No more mutation choices at site 18
+No more mutation choices at site 19
+Match found: 543
+Match found: 544
+Match found: 544
+Match found: 545
+No more mutation choices at site 1
+Match found: 545
+Match found: 546
+Match found: 546
+Match found: 547
+No more mutation choices at site 4
+No more mutation choices at site 5
+Match found: 547
+Match found: 548
+Match found: 548
+Match found: 549
+Match found: 549
+Match found: 550
+No more mutation choices at site 9
+Match found: 550
+Match found: 551
+Match found: 551
+Match found: 552
+Match found: 552
+Match found: 553
+Match found: 553
+Match found: 554
+No more mutation choices at site 14
+Match found: 554
+Match found: 555
+Match found: 555
+Match found: 556
+Match found: 556
+Match found: 557
+Match found: 557
+Match found: 558
+Match found: 558
+Match found: 559
+No more mutation choices at site 20
+Match found: 559
+Match found: 560
+No more mutation choices at site 1
+No more mutation choices at site 2
+Match found: 560
+Match found: 561
+Match found: 561
+Match found: 562
+No more mutation choices at site 5
+Match found: 562
+Match found: 563
+No more mutation choices at site 7
+Match found: 563
+Match found: 564
+Match found: 564
+Match found: 565
+Match found: 565
+Match found: 566
+Match found: 566
+Match found: 567
+No more mutation choices at site 12
+Match found: 567
+Match found: 568
+Match found: 568
+Match found: 569
+Match found: 569
+Match found: 570
+No more mutation choices at site 16
+No more mutation choices at site 17
+Match found: 570
+Match found: 571
+Match found: 571
+Match found: 572
+Match found: 572
+Match found: 573
+Match found: 573
+Match found: 574
+Match found: 574
+Match found: 575
+Match found: 575
+Match found: 576
+Match found: 576
+Match found: 577
+No more mutation choices at site 4
+Match found: 577
+Match found: 578
+No more mutation choices at site 6
+Match found: 578
+Match found: 579
+Match found: 579
+Match found: 580
+Match found: 580
+Match found: 581
+Match found: 581
+Match found: 582
+Match found: 582
+Match found: 583
+Match found: 583
+Match found: 584
+No more mutation choices at site 13
+Match found: 584
+Match found: 585
+No more mutation choices at site 15
+No more mutation choices at site 16
+No more mutation choices at site 17
+No more mutation choices at site 18
+No more mutation choices at site 19
+Match found: 585
+Match found: 586
+Match found: 586
+Match found: 587
+Match found: 587
+Match found: 588
+Match found: 588
+Match found: 589
+Match found: 589
+Match found: 590
+Match found: 590
+Match found: 591
+No more mutation choices at site 5
+Match found: 591
+Match found: 592
+Match found: 592
+Match found: 593
+No more mutation choices at site 8
+Match found: 593
+Match found: 594
+Match found: 594
+Match found: 595
+Match found: 595
+Match found: 596
+Match found: 596
+Match found: 597
+Match found: 597
+Match found: 598
+No more mutation choices at site 14
+No more mutation choices at site 15
+Match found: 598
+Match found: 599
+No more mutation choices at site 17
+Match found: 599
+Match found: 600
+No more mutation choices at site 19
+Match found: 600
+Match found: 601
+No more mutation choices at site 0
+Match found: 601
+Match found: 602
+No more mutation choices at site 2
+Match found: 602
+Match found: 603
+No more mutation choices at site 4
+Match found: 603
+Match found: 604
+Match found: 604
+Match found: 605
+No more mutation choices at site 7
+Match found: 605
+Match found: 606
+Match found: 606
+Match found: 607
+Match found: 607
+Match found: 608
+Match found: 608
+Match found: 609
+No more mutation choices at site 12
+Match found: 609
+Match found: 610
+No more mutation choices at site 14
+Match found: 610
+Match found: 611
+No more mutation choices at site 16
+Match found: 611
+Match found: 612
+Match found: 612
+Match found: 613
+No more mutation choices at site 19
+Match found: 613
+Match found: 614
+No more mutation choices at site 0
+Match found: 614
+Match found: 615
+Match found: 615
+Match found: 616
+No more mutation choices at site 3
+No more mutation choices at site 4
+No more mutation choices at site 5
+Match found: 616
+Match found: 617
+Match found: 617
+Match found: 618
+Match found: 618
+Match found: 619
+Match found: 619
+Match found: 620
+Match found: 620
+Match found: 621
+Match found: 621
+Match found: 622
+Match found: 622
+Match found: 623
+No more mutation choices at site 13
+No more mutation choices at site 14
+Match found: 623
+Match found: 624
+Match found: 624
+Match found: 625
+No more mutation choices at site 17
+No more mutation choices at site 18
+No more mutation choices at site 19
+Match found: 625
+Match found: 626
+Match found: 626
+Match found: 627
+Match found: 627
+Match found: 628
+Match found: 628
+Match found: 629
+No more mutation choices at site 3
+No more mutation choices at site 4
+Match found: 629
+Match found: 630
+Match found: 630
+Match found: 631
+Match found: 631
+Match found: 632
+No more mutation choices at site 8
+Match found: 632
+Match found: 633
+Match found: 633
+Match found: 634
+Match found: 634
+Match found: 635
+Match found: 635
+Match found: 636
+Match found: 636
+Match found: 637
+Match found: 637
+Match found: 638
+No more mutation choices at site 15
+Match found: 638
+Match found: 639
+No more mutation choices at site 17
+Match found: 639
+Match found: 640
+No more mutation choices at site 19
+No more mutation choices at site 20
+Match found: 640
+Match found: 641
+No more mutation choices at site 1
+No more mutation choices at site 2
+No more mutation choices at site 3
+No more mutation choices at site 4
+Match found: 641
+Match found: 642
+No more mutation choices at site 6
+No more mutation choices at site 7
+Match found: 642
+Match found: 643
+Match found: 643
+Match found: 644
+Match found: 644
+Match found: 645
+Match found: 645
+Match found: 646
+No more mutation choices at site 12
+Match found: 646
+Match found: 647
+Match found: 647
+Match found: 648
+Match found: 648
+Match found: 649
+No more mutation choices at site 16
+Match found: 649
+Match found: 650
+Match found: 650
+Match found: 651
+No more mutation choices at site 19
+Match found: 651
+Match found: 652
+No more mutation choices at site 0
+Match found: 652
+Match found: 653
+Match found: 653
+Match found: 654
+Match found: 654
+Match found: 655
+No more mutation choices at site 4
+No more mutation choices at site 5
+Match found: 655
+Match found: 656
+No more mutation choices at site 7
+Match found: 656
+Match found: 657
+No more mutation choices at site 9
+Match found: 657
+Match found: 658
+Match found: 658
+Match found: 659
+Match found: 659
+Match found: 660
+No more mutation choices at site 13
+No more mutation choices at site 14
+Match found: 660
+Match found: 661
+Match found: 661
+Match found: 662
+No more mutation choices at site 17
+Match found: 662
+Match found: 663
+Match found: 663
+Match found: 664
+Match found: 664
+Match found: 665
+No more mutation choices at site 0
+No more mutation choices at site 1
+Match found: 665
+Match found: 666
+Match found: 666
+Match found: 667
+Match found: 667
+Match found: 668
+Match found: 668
+Match found: 669
+Match found: 669
+Match found: 670
+No more mutation choices at site 7
+Match found: 670
+Match found: 671
+Match found: 671
+Match found: 672
+Match found: 672
+Match found: 673
+Match found: 673
+Match found: 674
+Match found: 674
+Match found: 675
+No more mutation choices at site 13
+No more mutation choices at site 14
+No more mutation choices at site 15
+No more mutation choices at site 16
+No more mutation choices at site 17
+Match found: 675
+Match found: 676
+Match found: 676
+Match found: 677
+Match found: 677
+Match found: 678
+No more mutation choices at site 0
+No more mutation choices at site 1
+Match found: 678
+Match found: 679
+Match found: 679
+Match found: 680
+Match found: 680
+Match found: 681
+No more mutation choices at site 5
+Match found: 681
+Match found: 682
+Match found: 682
+Match found: 683
+Match found: 683
+Match found: 684
+Match found: 684
+Match found: 685
+Match found: 685
+Match found: 686
+Match found: 686
+Match found: 687
+Match found: 687
+Match found: 688
+No more mutation choices at site 13
+No more mutation choices at site 14
+No more mutation choices at site 15
+Match found: 688
+Match found: 689
+No more mutation choices at site 17
+No more mutation choices at site 18
+Match found: 689
+Match found: 690
+Match found: 690
+Match found: 691
+Match found: 691
+Match found: 692
+No more mutation choices at site 1
+Match found: 692
+Match found: 693
+No more mutation choices at site 3
+No more mutation choices at site 4
+Match found: 693
+Match found: 694
+No more mutation choices at site 6
+Match found: 694
+Match found: 695
+No more mutation choices at site 8
+Match found: 695
+Match found: 696
+Match found: 696
+Match found: 697
+Match found: 697
+Match found: 698
+Match found: 698
+Match found: 699
+No more mutation choices at site 13
+Match found: 699
+Match found: 700
+No more mutation choices at site 15
+Match found: 700
+Match found: 701
+Match found: 701
+Match found: 702
+No more mutation choices at site 18
+Match found: 702
+Match found: 703
+Match found: 703
+Match found: 704
+Match found: 704
+Match found: 705
+Match found: 705
+Match found: 706
+No more mutation choices at site 2
+Match found: 706
+Match found: 707
+Match found: 707
+Match found: 708
+No more mutation choices at site 5
+Match found: 708
+Match found: 709
+Match found: 709
+Match found: 710
+No more mutation choices at site 8
+Match found: 710
+Match found: 711
+Match found: 711
+Match found: 712
+Match found: 712
+Match found: 713
+No more mutation choices at site 12
+No more mutation choices at site 13
+Match found: 713
+Match found: 714
+No more mutation choices at site 15
+Match found: 714
+Match found: 715
+No more mutation choices at site 17
+No more mutation choices at site 18
+Match found: 715
+Match found: 716
+Match found: 716
+Match found: 717
+No more mutation choices at site 0
+Match found: 717
+Match found: 718
+No more mutation choices at site 2
+No more mutation choices at site 3
+Match found: 718
+Match found: 719
+No more mutation choices at site 5
+Match found: 719
+Match found: 720
+Match found: 720
+Match found: 721
+No more mutation choices at site 8
+Match found: 721
+Match found: 722
+Match found: 722
+Match found: 723
+Match found: 723
+Match found: 724
+Match found: 724
+Match found: 725
+No more mutation choices at site 13
+No more mutation choices at site 14
+Match found: 725
+Match found: 726
+Match found: 726
+Match found: 727
+No more mutation choices at site 17
+Match found: 727
+Match found: 728
+Match found: 728
+Match found: 729
+Match found: 729
+Match found: 730
+No more mutation choices at site 0
+No more mutation choices at site 1
+No more mutation choices at site 2
+No more mutation choices at site 3
+No more mutation choices at site 4
+No more mutation choices at site 5
+Match found: 730
+Match found: 731
+No more mutation choices at site 7
+No more mutation choices at site 8
+Match found: 731
+Match found: 732
+Match found: 732
+Match found: 733
+Match found: 733
+Match found: 734
+Match found: 734
+Match found: 735
+Match found: 735
+Match found: 736
+Match found: 736
+Match found: 737
+No more mutation choices at site 15
+Match found: 737
+Match found: 738
+No more mutation choices at site 17
+Match found: 738
+Match found: 739
+No more mutation choices at site 19
+Match found: 739
+Match found: 740
+No more mutation choices at site 0
+No more mutation choices at site 1
+No more mutation choices at site 2
+No more mutation choices at site 3
+No more mutation choices at site 4
+No more mutation choices at site 5
+No more mutation choices at site 6
+No more mutation choices at site 7
+Match found: 740
+Match found: 741
+Match found: 741
+Match found: 742
+Match found: 742
+Match found: 743
+Match found: 743
+Match found: 744
+No more mutation choices at site 12
+Match found: 744
+Match found: 745
+No more mutation choices at site 14
+Match found: 745
+Match found: 746
+Match found: 746
+Match found: 747
+Match found: 747
+Match found: 748
+Match found: 748
+Match found: 749
+Match found: 749
+Match found: 750
+Match found: 750
+Match found: 751
+Match found: 751
+Match found: 752
+No more mutation choices at site 1
+Match found: 752
+Match found: 753
+No more mutation choices at site 3
+Match found: 753
+Match found: 754
+Match found: 754
+Match found: 755
+Match found: 755
+Match found: 756
+Match found: 756
+Match found: 757
+Match found: 757
+Match found: 758
+Match found: 758
+Match found: 759
+Match found: 759
+Match found: 760
+No more mutation choices at site 11
+No more mutation choices at site 12
+No more mutation choices at site 13
+Match found: 760
+Match found: 761
+No more mutation choices at site 15
+Match found: 761
+Match found: 762
+No more mutation choices at site 17
+Match found: 762
+Match found: 763
+Match found: 763
+Match found: 764
+Match found: 764
+Match found: 765
+Match found: 765
+Match found: 766
+Match found: 766
+Match found: 767
+Match found: 767
+Match found: 768
+No more mutation choices at site 3
+Match found: 768
+Match found: 769
+Match found: 769
+Match found: 770
+Match found: 770
+Match found: 771
+Match found: 771
+Match found: 772
+Match found: 772
+Match found: 773
+Match found: 773
+Match found: 774
+Match found: 774
+Match found: 775
+Match found: 775
+Match found: 776
+Match found: 776
+Match found: 777
+Match found: 777
+Match found: 778
+No more mutation choices at site 14
+No more mutation choices at site 15
+Match found: 778
+Match found: 779
+Match found: 779
+Match found: 780
+Match found: 780
+Match found: 781
+Match found: 781
+Match found: 782
+Match found: 782
+Match found: 783
+Match found: 783
+Match found: 784
+No more mutation choices at site 1
+No more mutation choices at site 2
+No more mutation choices at site 3
+No more mutation choices at site 4
+No more mutation choices at site 5
+Match found: 784
+Match found: 785
+Match found: 785
+Match found: 786
+Match found: 786
+Match found: 787
+Match found: 787
+Match found: 788
+Match found: 788
+Match found: 789
+Match found: 789
+Match found: 790
+No more mutation choices at site 12
+Match found: 790
+Match found: 791
+No more mutation choices at site 14
+Match found: 791
+Match found: 792
+No more mutation choices at site 16
+Match found: 792
+Match found: 793
+Match found: 793
+Match found: 794
+Match found: 794
+Match found: 795
+Match found: 795
+Match found: 796
+Match found: 796
+Match found: 797
+Match found: 797
+Match found: 798
+No more mutation choices at site 2
+Match found: 798
+Match found: 799
+No more mutation choices at site 4
+Match found: 799
+Match found: 800
+Match found: 800
+Match found: 801
+Match found: 801
+Match found: 802
+Match found: 802
+Match found: 803
+Match found: 803
+Match found: 804
+Match found: 804
+Match found: 805
+Match found: 805
+Match found: 806
+Match found: 806
+Match found: 807
+Match found: 807
+Match found: 808
+No more mutation choices at site 14
+Match found: 808
+Match found: 809
+No more mutation choices at site 16
+Match found: 809
+Match found: 810
+Match found: 810
+Match found: 811
+Match found: 811
+Match found: 812
+Match found: 812
+Match found: 813
+Match found: 813
+Match found: 814
+No more mutation choices at site 1
+Match found: 814
+Match found: 815
+Match found: 815
+Match found: 816
+No more mutation choices at site 4
+Match found: 816
+Match found: 817
+Match found: 817
+Match found: 818
+Match found: 818
+Match found: 819
+Match found: 819
+Match found: 820
+Match found: 820
+Match found: 821
+Match found: 821
+Match found: 822
+Match found: 822
+Match found: 823
+Match found: 823
+Match found: 824
+No more mutation choices at site 13
+No more mutation choices at site 14
+No more mutation choices at site 15
+Match found: 824
+Match found: 825
+No more mutation choices at site 17
+No more mutation choices at site 18
+Match found: 825
+Match found: 826
+Match found: 826
+Match found: 827
+No more mutation choices at site 0
+No more mutation choices at site 1
+Match found: 827
+Match found: 828
+No more mutation choices at site 3
+No more mutation choices at site 4
+Match found: 828
+Match found: 829
+No more mutation choices at site 6
+Match found: 829
+Match found: 830
+No more mutation choices at site 8
+Match found: 830
+Match found: 831
+Match found: 831
+Match found: 832
+Match found: 832
+Match found: 833
+Match found: 833
+Match found: 834
+Match found: 834
+Match found: 835
+No more mutation choices at site 14
+No more mutation choices at site 15
+Match found: 835
+Match found: 836
+No more mutation choices at site 17
+Match found: 836
+Match found: 837
+No more mutation choices at site 19
+Match found: 837
+Match found: 838
+No more mutation choices at site 0
+No more mutation choices at site 1
+No more mutation choices at site 2
+Match found: 838
+Match found: 839
+No more mutation choices at site 4
+Match found: 839
+Match found: 840
+Match found: 840
+Match found: 841
+No more mutation choices at site 7
+Match found: 841
+Match found: 842
+No more mutation choices at site 9
+Match found: 842
+Match found: 843
+Match found: 843
+Match found: 844
+Match found: 844
+Match found: 845
+No more mutation choices at site 13
+Match found: 845
+Match found: 846
+Match found: 846
+Match found: 847
+No more mutation choices at site 16
+No more mutation choices at site 17
+Match found: 847
+Match found: 848
+Match found: 848
+Match found: 849
+Match found: 849
+Match found: 850
+No more mutation choices at site 0
+Match found: 850
+Match found: 851
+Match found: 851
+Match found: 852
+No more mutation choices at site 3
+Match found: 852
+Match found: 853
+No more mutation choices at site 5
+No more mutation choices at site 6
+No more mutation choices at site 7
+No more mutation choices at site 8
+Match found: 853
+Match found: 854
+Match found: 854
+Match found: 855
+Match found: 855
+Match found: 856
+Match found: 856
+Match found: 857
+No more mutation choices at site 13
+Match found: 857
+Match found: 858
+No more mutation choices at site 15
+No more mutation choices at site 16
+No more mutation choices at site 17
+No more mutation choices at site 18
+No more mutation choices at site 19
+Match found: 858
+Match found: 859
+Match found: 859
+Match found: 860
+Match found: 860
+Match found: 861
+No more mutation choices at site 2
+Match found: 861
+Match found: 862
+No more mutation choices at site 4
+No more mutation choices at site 5
+Match found: 862
+Match found: 863
+No more mutation choices at site 7
+Match found: 863
+Match found: 864
+Match found: 864
+Match found: 865
+Match found: 865
+Match found: 866
+Match found: 866
+Match found: 867
+No more mutation choices at site 12
+Match found: 867
+Match found: 868
+No more mutation choices at site 14
+Match found: 868
+Match found: 869
+No more mutation choices at site 16
+Match found: 869
+Match found: 870
+No more mutation choices at site 18
+Match found: 870
+Match found: 871
+No more mutation choices at site 20
+Match found: 871
+Match found: 872
+No more mutation choices at site 1
+Match found: 872
+Match found: 873
+No more mutation choices at site 3
+Match found: 873
+Match found: 874
+Match found: 874
+Match found: 875
+No more mutation choices at site 6
+Match found: 875
+Match found: 876
+Match found: 876
+Match found: 877
+No more mutation choices at site 9
+Match found: 877
+Match found: 878
+Match found: 878
+Match found: 879
+Match found: 879
+Match found: 880
+No more mutation choices at site 13
+No more mutation choices at site 14
+No more mutation choices at site 15
+Match found: 880
+Match found: 881
+Match found: 881
+Match found: 882
+Match found: 882
+Match found: 883
+Match found: 883
+Match found: 884
+Match found: 884
+Match found: 885
+No more mutation choices at site 0
+Match found: 885
+Match found: 886
+No more mutation choices at site 2
+Match found: 886
+Match found: 887
+No more mutation choices at site 4
+Match found: 887
+Match found: 888
+Match found: 888
+Match found: 889
+No more mutation choices at site 7
+No more mutation choices at site 8
+Match found: 889
+Match found: 890
+Match found: 890
+Match found: 891
+Match found: 891
+Match found: 892
+Match found: 892
+Match found: 893
+No more mutation choices at site 13
+Match found: 893
+Match found: 894
+Match found: 894
+Match found: 895
+Match found: 895
+Match found: 896
+No more mutation choices at site 17
+Match found: 896
+Match found: 897
+No more mutation choices at site 19
+Match found: 897
+Match found: 898
+No more mutation choices at site 0
+Match found: 898
+Match found: 899
+No more mutation choices at site 2
+Match found: 899
+Match found: 900
+Match found: 900
+Match found: 901
+No more mutation choices at site 5
+No more mutation choices at site 6
+Match found: 901
+Match found: 902
+Match found: 902
+Match found: 903
+No more mutation choices at site 9
+Match found: 903
+Match found: 904
+Match found: 904
+Match found: 905
+No more mutation choices at site 12
+Match found: 905
+Match found: 906
+No more mutation choices at site 14
+Match found: 906
+Match found: 907
+No more mutation choices at site 16
+Match found: 907
+Match found: 908
+Match found: 908
+Match found: 909
+Match found: 909
+Match found: 910
+No more mutation choices at site 20
+Match found: 910
+Match found: 911
+No more mutation choices at site 1
+No more mutation choices at site 2
+No more mutation choices at site 3
+Match found: 911
+Match found: 912
+Match found: 912
+Match found: 913
+No more mutation choices at site 6
+No more mutation choices at site 7
+Match found: 913
+Match found: 914
+No more mutation choices at site 9
+Match found: 914
+Match found: 915
+Match found: 915
+Match found: 916
+Match found: 916
+Match found: 917
+No more mutation choices at site 13
+Match found: 917
+Match found: 918
+No more mutation choices at site 15
+Match found: 918
+Match found: 919
+No more mutation choices at site 17
+Match found: 919
+Match found: 920
+Match found: 920
+Match found: 921
+No more mutation choices at site 20
+Match found: 921
+Match found: 922
+Match found: 922
+Match found: 923
+No more mutation choices at site 2
+No more mutation choices at site 3
+No more mutation choices at site 4
+Match found: 923
+Match found: 924
+Match found: 924
+Match found: 925
+No more mutation choices at site 7
+No more mutation choices at site 8
+Match found: 925
+Match found: 926
+Match found: 926
+Match found: 927
+Match found: 927
+Match found: 928
+Match found: 928
+Match found: 929
+Match found: 929
+Match found: 930
+No more mutation choices at site 14
+Match found: 930
+Match found: 931
+Match found: 931
+Match found: 932
+Match found: 932
+Match found: 933
+Match found: 933
+Match found: 934
+No more mutation choices at site 19
+Match found: 934
+Match found: 935
+No more mutation choices at site 0
+Match found: 935
+Match found: 936
+No more mutation choices at site 2
+Match found: 936
+Match found: 937
+Match found: 937
+Match found: 938
+No more mutation choices at site 5
+Match found: 938
+Match found: 939
+Match found: 939
+Match found: 940
+Match found: 940
+Match found: 941
+No more mutation choices at site 9
+Match found: 941
+Match found: 942
+Match found: 942
+Match found: 943
+No more mutation choices at site 12
+No more mutation choices at site 13
+Match found: 943
+Match found: 944
+No more mutation choices at site 15
+No more mutation choices at site 16
+No more mutation choices at site 17
+Match found: 944
+Match found: 945
+No more mutation choices at site 19
+Match found: 945
+Match found: 946
+Match found: 946
+Match found: 947
+Match found: 947
+Match found: 948
+No more mutation choices at site 2
+Match found: 948
+Match found: 949
+Match found: 949
+Match found: 950
+No more mutation choices at site 5
+No more mutation choices at site 6
+Match found: 950
+Match found: 951
+Match found: 951
+Match found: 952
+Match found: 952
+Match found: 953
+Match found: 953
+Match found: 954
+Match found: 954
+Match found: 955
+Match found: 955
+Match found: 956
+No more mutation choices at site 13
+Match found: 956
+Match found: 957
+No more mutation choices at site 15
+Match found: 957
+Match found: 958
+No more mutation choices at site 17
+No more mutation choices at site 18
+No more mutation choices at site 19
+Match found: 958
+Match found: 959
+Match found: 959
+Match found: 960
+No more mutation choices at site 1
+Match found: 960
+Match found: 961
+No more mutation choices at site 3
+No more mutation choices at site 4
+Match found: 961
+Match found: 962
+No more mutation choices at site 6
+No more mutation choices at site 7
+Match found: 962
+Match found: 963
+Match found: 963
+Match found: 964
+Match found: 964
+Match found: 965
+Match found: 965
+Match found: 966
+Match found: 966
+Match found: 967
+Match found: 967
+Match found: 968
+No more mutation choices at site 14
+Match found: 968
+Match found: 969
+Match found: 969
+Match found: 970
+No more mutation choices at site 17
+No more mutation choices at site 18
+Match found: 970
+Match found: 971
+No more mutation choices at site 20
+No more mutation choices at site 0
+Match found: 971
+Match found: 972
+Match found: 972
+Match found: 973
+No more mutation choices at site 3
+Match found: 973
+Match found: 974
+Match found: 974
+Match found: 975
+No more mutation choices at site 6
+Match found: 975
+Match found: 976
+No more mutation choices at site 8
+Match found: 976
+Match found: 977
+Match found: 977
+Match found: 978
+Match found: 978
+Match found: 979
+No more mutation choices at site 12
+Match found: 979
+Match found: 980
+Match found: 980
+Match found: 981
+No more mutation choices at site 15
+Match found: 981
+Match found: 982
+Match found: 982
+Match found: 983
+Match found: 983
+Match found: 984
+Match found: 984
+Match found: 985
+No more mutation choices at site 20
+Match found: 985
+Match found: 986
+No more mutation choices at site 1
+No more mutation choices at site 2
+No more mutation choices at site 3
+Match found: 986
+Match found: 987
+No more mutation choices at site 5
+Match found: 987
+Match found: 988
+Match found: 988
+Match found: 989
+Match found: 989
+Match found: 990
+Match found: 990
+Match found: 991
+Match found: 991
+Match found: 992
+Match found: 992
+Match found: 993
+Match found: 993
+Match found: 994
+No more mutation choices at site 13
+Match found: 994
+Match found: 995
+No more mutation choices at site 15
+Match found: 995
+Match found: 996
+No more mutation choices at site 17
+Match found: 996
+Match found: 997
+No more mutation choices at site 19
+Match found: 997
+Match found: 998
+Match found: 998
+Match found: 999
+No more mutation choices at site 1
+No more mutation choices at site 2
+Match found: 999
+Total sequences found: 1000

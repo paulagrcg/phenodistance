@@ -19,7 +19,7 @@ def plasticitydistance(fRNAprob1, fRNAprob2):
             distances[key1] = distance
     return distances
 
-def hamming_plasticity_optimal(fRNAhammingdistance, fRNAfolds, distances):
+def hamming_plasticity_optimal_old(fRNAhammingdistance, fRNAfolds, distances):
     scores = {}
     for name in fRNAhammingdistance.keys(): 
         scores[name] = fRNAhammingdistance[name] - distances[name] 
@@ -28,6 +28,23 @@ def hamming_plasticity_optimal(fRNAhammingdistance, fRNAfolds, distances):
 
     # Select the data points with the highest scores
     selected_data = sorted(filtered_scores.items(), key=lambda item: item[1], reverse=True)
+
+    # Extract the Hamming values and their corresponding minimum distances
+    selected_hamming_values = [fRNAhammingdistance[name] for name, score in selected_data]
+    selected_min_distances = [distances[name] for name, score in selected_data]
+    selected_names = [name for name, score in selected_data]
+
+    return selected_hamming_values, selected_min_distances, selected_names
+
+def hamming_plasticity_optimal(fRNAhammingdistance, fRNAfolds, distances):
+    scores = {}
+    for name in fRNAhammingdistance.keys(): 
+        scores[name] = distances[name] 
+    # Remove entries from scores where the sequence of dots is in fRNAfolds
+    filtered_scores = {key: value for key, value in scores.items() if '.' * len(key[1]) not in fRNAfolds[key] and fRNAhammingdistance[key] >= 0.5}
+
+    # Select the data points with the highest scores
+    selected_data = sorted(filtered_scores.items(), key=lambda item: item[1])
 
     # Extract the Hamming values and their corresponding minimum distances
     selected_hamming_values = [fRNAhammingdistance[name] for name, score in selected_data]
@@ -74,7 +91,7 @@ def scan_sites(seq, samplesize):
                 seqmut = mutationchoices.pop(m)
                 mutoutput, mfolds = suboptfolding(seqmut)
                 if fold1 in mfolds and fold2 in mfolds:  # if MFE is the same (so in the same neutral space)
-                    print(f"Match found: {samplesizecount}")
+                    #print(f"Match found: {samplesizecount}")
                     seqs.append(seqmut)
                     site_neutral = True
                     fold1 = mutoutput[0][0]
@@ -91,19 +108,19 @@ def scan_sites(seq, samplesize):
                     if samplesizecount == samplesize:
                         break
                     site += 1
-                    print(f"Match found: {samplesizecount}")
+                    #print(f"Match found: {samplesizecount}")
                     if site == seqlen:
                         site = 0
                     seq = seqmut
             if samplesizecount == samplesize:
                 break
             if not mutationchoices:
-                print(f"No more mutation choices at site {site}")
+                #print(f"No more mutation choices at site {site}")
                 site += 1
                 if site == seqlen:
                     site = 0
 
-    print(f"Total sequences found: {samplesizecount}")
+    #print(f"Total sequences found: {samplesizecount}")
     return seqs, folds1, folds2, probs1, probs2
 
 def compute_pvalue(p1, p2, kde, data):
@@ -152,6 +169,6 @@ if __name__ == "__main__":
     p_value = compute_pvalue(p1, p2, kde, data)
 
     #print(f"Time taken for site scanning: {end-start}")
-    with open(f"../data/site_scanning_probs_pval_{seqposition}.pkl","wb") as f:
-        pickle.dump({'probs1': probs1, 'probs2': probs2, 'p_value': p_value},f)
+    with open(f"../data/site_scanning_probs_pval_seq{seqposition}_ssize{samplesize}.pkl","wb") as f:
+        pickle.dump({'seqs': seqs, 'probs1': probs1, 'probs2': probs2, 'p_value': p_value},f)
     

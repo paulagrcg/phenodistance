@@ -8,14 +8,13 @@ from functionalRNA import *
 import sys
 import time
 import pickle
-from scipy.stats import gaussian_kde
 
 
 def plasticitydistance(fRNAprob1, fRNAprob2):
     distances = {}
     for x, y,key1,key2 in zip(fRNAprob1.values(), fRNAprob2.values(), fRNAprob1.keys(), fRNAprob2.keys()):
         if key1 == key2:
-            distance = np.sqrt((x - 0.5)**2 + (y - 0.5)**2)
+            distance = np.sqrt((x - 0.5)**2 + (y - 0.5)**2)/np.sqrt(2)
             distances[key1] = distance
     return distances
 
@@ -36,7 +35,7 @@ def hamming_plasticity_optimal_old(fRNAhammingdistance, fRNAfolds, distances):
 
     return selected_hamming_values, selected_min_distances, selected_names
 
-def hamming_plasticity_optimal(fRNAhammingdistance, fRNAfolds, distances):
+def hamming_plasticity_optimal_old(fRNAhammingdistance, fRNAfolds, distances):
     scores = {}
     for name in fRNAhammingdistance.keys(): 
         scores[name] = distances[name] 
@@ -52,6 +51,78 @@ def hamming_plasticity_optimal(fRNAhammingdistance, fRNAfolds, distances):
     selected_names = [name for name, score in selected_data]
 
     return selected_hamming_values, selected_min_distances, selected_names
+
+def hamming_plasticity_optimal(fRNAhammingdistance, fRNAfolds, distances):
+    selected_names = []
+    selected_hamming_values =[]
+    selected_min_distances = []
+    for name in fRNAhammingdistance.keys():
+        if '.' * len(name[1]) not in fRNAfolds[name]:
+            selected_names.append(name)
+            selected_hamming_values.append(fRNAhammingdistance[name])
+            selected_min_distances.append(distances[name])
+    selected_names = np.array(selected_names)
+    selected_hamming_values = np.array(selected_hamming_values)
+    selected_min_distances = np.array(selected_min_distances)
+
+
+    # Define the coordinates of the two points
+    #point0 = (0.30688980382826875, 0.7777777777777778)
+    #point1 = (0.20333026388667144, 0.16)
+    point2 = (0.4702129756344944,0.7741935483870968)
+
+    point1= (0.15382552893408447, 0.18181818181818182)
+    point0 = (0.24487580716620733, 0.8095238095238095)
+    
+    m = (point1[1] - point0[1]) / (point1[0] - point0[0])
+    b = point0[1] - m * point0[0]
+
+    m1= (point2[1] - point0[1]) / (point2[0] - point0[0])
+    b1 = point0[1] - m1 * point0[0]
+
+    point0a = (0.30688980382826875,0.7777777777777778) #('FR481122||Fly small RNA', 'TCGAATCCGAAGATTGCA') 0.30688980382826875 0.7777777777777778
+    point1a =  (0.20333026388667144,0.16)
+
+    ma = (point1a[1] - point0a[1]) / (point1a[0] - point0a[0])
+    ba = point1a[1] - ma * point1a[0]
+
+    # Calculate the slope (m) and y-intercept (b) of the line
+   
+
+    # Define a function to determine if a point is to the left of the line
+    def is_left_of_line(x, y, m, b):
+        return y > m * x + b
+    def is_hamming_greater_than_small(h,h0=0.15):
+        return h > h0
+
+    left_mask = is_left_of_line(selected_min_distances, selected_hamming_values, m, b) & is_hamming_greater_than_small(selected_hamming_values)
+    left_mask_a = is_left_of_line(selected_min_distances, selected_hamming_values, ma, ba) & is_hamming_greater_than_small(selected_hamming_values)
+    # Filter points that are to the left of the second line
+    top_mask = is_left_of_line(selected_min_distances, selected_hamming_values, m1, b1)
+
+    left_names = selected_names[left_mask]
+    print(len(left_names))
+    left_names_a = selected_names[left_mask_a]
+    print(len(left_names_a))
+    left_names_minus_a = []
+    for i in left_names_a:
+        if i in left_names: continue
+        else: left_names_minus_a.append(i)
+
+    print(len(left_names_minus_a))
+    #left_min_distances = selected_min_distances[left_mask]
+    #left_hamming_values = selected_hamming_values[left_mask]
+    #combined_mask = left_mask & top_mask
+    #topminuscombined_mask = top_mask & ~combined_mask
+    #topminuscombined_min_distances = selected_min_distances[topminuscombined_mask]
+    #topminuscombined_hamming_values = selected_hamming_values[topminuscombined_mask]
+    #topminuscombined_names = selected_names[topminuscombined_mask]
+    #joined_names = np.concatenate((topminuscombined_names, left_names))
+    #joined_hamming_values = np.concatenate((topminuscombined_hamming_values, left_hamming_values))
+    #joined_min_distances = np.concatenate((topminuscombined_min_distances, left_min_distances))
+
+    #return left_names, topminuscombined_names,joined_names
+    return left_names, left_names_a,left_names_minus_a
 
 def mutatesite(seq, site):
     mutations = {'A': ['C', 'T', 'G'], 'C': ['A', 'T', 'G'], 'G': ['A', 'T', 'C'], 'T': ['A', 'G', 'C']}
@@ -75,9 +146,9 @@ def scan_sites(seq, samplesize):
     prob2 = float(seqoutput[1][2])
     prob1 = float(seqoutput[0][2])
 
-    folds1.append(fold1)
-    folds2.append(fold2)
-    probs1.append(prob1)
+    #folds1.append(fold1)
+    #folds2.append(fold2)
+    #probs1.append(prob1)
     probs2.append(prob2)
     
     site = 0
@@ -90,18 +161,18 @@ def scan_sites(seq, samplesize):
                 m = np.random.randint(0, len(mutationchoices))
                 seqmut = mutationchoices.pop(m)
                 mutoutput, mfolds = suboptfolding(seqmut)
-                if fold1 in mfolds and fold2 in mfolds:  # if MFE is the same (so in the same neutral space)
+                if fold1 in mfolds and fold2 in mfolds:  # both are still in the plastic repertoire
                     #print(f"Match found: {samplesizecount}")
                     seqs.append(seqmut)
                     site_neutral = True
                     fold1 = mutoutput[0][0]
                     fold2 = mutoutput[1][0]
                     prob2 = float(mutoutput[1][2])
-                    prob1 = float(mutoutput[0][2])
+                    #prob1 = float(mutoutput[0][2])
 
-                    folds1.append(fold1)
-                    folds2.append(fold2)
-                    probs1.append(prob1)
+                    #folds1.append(fold1)
+                    #folds2.append(fold2)
+                    #probs1.append(prob1)
                     probs2.append(prob2)
 
                     samplesizecount += 1
@@ -121,54 +192,59 @@ def scan_sites(seq, samplesize):
                     site = 0
 
     #print(f"Total sequences found: {samplesizecount}")
-    return seqs, folds1, folds2, probs1, probs2
+    #return seqs, folds1, folds2, probs1, probs2
+    return seqs, probs2
 
-def compute_pvalue(p1, p2, kde, data):
-        # Evaluate the density at the point (p1, p2)
-        point_density = kde([p1, p2])
-
-        # Compute densities for all points
-        all_densities = kde(data)
-
-        # Calculate the p-value as the fraction of points with density <= point_density
-        p_value = np.sum(all_densities <= point_density) / len(all_densities)
-
-        return p_value
 
 if __name__ == "__main__":
 
     
-    with open('../data/fRNAhammingdistance.pkl','rb') as f:
-        fRNAhammingdistance = pickle.load(f)
+    #with open('../data/fRNAhammingdistance.pkl','rb') as f:
+    #    fRNAhammingdistance = pickle.load(f)
     with open('../data/fRNAprob2.pkl','rb') as f:
         fRNAprob2 =  pickle.load(f)
     with open('../data/fRNAprob1.pkl','rb') as f:
         fRNAprob1 =  pickle.load(f)
-    with open('../data/fRNAfolds.pkl','rb') as f:
-        fRNAfolds =  pickle.load(f)
+    #with open('../data/fRNAfolds.pkl','rb') as f:
+    #    fRNAfolds =  pickle.load(f)
 
-    distances = plasticitydistance(fRNAprob1, fRNAprob2)
-    selected_hamming_values, selected_min_distances, selected_names = hamming_plasticity_optimal(fRNAhammingdistance, fRNAfolds, distances)
-
+    #distances = plasticitydistance(fRNAprob1, fRNAprob2)
+    #start = time.time()
+    #left_names, topminuscombined_names,joined_names = hamming_plasticity_optimal(fRNAhammingdistance, fRNAfolds, distances)
+    #left_names, left_names_a,left_names_minus_a = hamming_plasticity_optimal(fRNAhammingdistance, fRNAfolds, distances)
+    
+    #selected_hamming_values, selected_min_distances, selected_names = hamming_plasticity_optimal_old(fRNAhammingdistance, fRNAfolds, distances)
     #site-scanning
+    #end  = time.time()
+    #print(f"Time taken for selecting: {end-start}")
+    #with open(f"../data/selected_names_left.pkl","wb") as f:
+    #    pickle.dump(left_names,f)
+    #with open(f"../data/selected_names_left_a.pkl","wb") as f:
+    #    pickle.dump(left_names_a,f)
+    with open(f"../data/selected_names_left_minus_a.pkl","rb") as f:
+        left_names_minus = pickle.load(f)
+
     samplesize = int(sys.argv[1])
     seqposition = int(sys.argv[2])
     #i = 0
     #start = time.time()
     #seqs, folds1, folds2, probs1, probs2 = scan_sites(selected_sequences[i], samplesize)
     #end = time.time()
-
+    
     #p1 and p2 for p-value calculation
-    p1 = fRNAprob1[selected_names[seqposition]]
-    p2 = fRNAprob2[selected_names[seqposition]]
+    #p1 = fRNAprob1[selected_names[seqposition]]
+    #p2 = fRNAprob2[selected_names[seqposition]]
+    p1 = fRNAprob1[tuple(left_names_minus[seqposition])]
+    p2 = fRNAprob2[tuple(left_names_minus[seqposition])]
 
-    seqs, folds1, folds2, probs1, probs2 = scan_sites(selected_names[seqposition][1], samplesize)
-    #p-value calculation
-    data = np.vstack([probs1, probs2])
-    kde = gaussian_kde(data)
-    p_value = compute_pvalue(p1, p2, kde, data)
+    #seqs, folds1, folds2, probs1, probs2 = scan_sites(selected_names[seqposition][1], samplesize)
+    start = time.time()
+    seqs, probs2 = scan_sites(tuple(left_names_minus[seqposition])[1], samplesize)
+    end = time.time()
+    print(f"Time taken for site scanning: {end-start}")
 
     #print(f"Time taken for site scanning: {end-start}")
-    with open(f"../data/site_scanning_probs_pval_seq{seqposition}_ssize{samplesize}.pkl","wb") as f:
-        pickle.dump({'seqs': seqs, 'probs1': probs1, 'probs2': probs2, 'p_value': p_value},f)
+    with open(f"../data/site_scanning_probs_pval_seq_left_minus{seqposition}_ssize{samplesize}.pkl","wb") as f:
+        pickle.dump({'seqs': seqs, 'probs2': probs2},f)
+    
     

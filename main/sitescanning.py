@@ -221,8 +221,8 @@ if __name__ == "__main__":
     #    pickle.dump(left_names,f)
     #with open(f"../data/selected_names_left_a.pkl","wb") as f:
     #    pickle.dump(left_names_a,f)
-    with open(f"../data/selected_names_left_minus_a.pkl","rb") as f:
-        left_names_minus = pickle.load(f)
+    with open(f"../data/selected_names_left_minus_bottom.pkl","rb") as f:
+        left_names = pickle.load(f)
 
     samplesize = int(sys.argv[1])
     seqposition = int(sys.argv[2])
@@ -234,17 +234,17 @@ if __name__ == "__main__":
     #p1 and p2 for p-value calculation
     #p1 = fRNAprob1[selected_names[seqposition]]
     #p2 = fRNAprob2[selected_names[seqposition]]
-    p1 = fRNAprob1[tuple(left_names_minus[seqposition])]
-    p2 = fRNAprob2[tuple(left_names_minus[seqposition])]
+    p1 = fRNAprob1[tuple(left_names[seqposition])]
+    p2 = fRNAprob2[tuple(left_names[seqposition])]
 
     #seqs, folds1, folds2, probs1, probs2 = scan_sites(selected_names[seqposition][1], samplesize)
-    start = time.time()
-    seqs, probs2 = scan_sites(tuple(left_names_minus[seqposition])[1], samplesize)
-    end = time.time()
-    print(f"Time taken for site scanning: {end-start}")
+    #start = time.time()
+    seqs, probs2 = scan_sites(tuple(left_names[seqposition])[1], samplesize)
+    #end = time.time()
+    #print(f"Time taken for site scanning: {end-start}")
 
     #print(f"Time taken for site scanning: {end-start}")
-    with open(f"../data/site_scanning_probs_pval_seq_left_minus{seqposition}_ssize{samplesize}.pkl","wb") as f:
+    with open(f"../data/site_scanning_probs_pval_seq_left_minus_bottom{seqposition}_ssize{samplesize}.pkl","wb") as f:
         pickle.dump({'seqs': seqs, 'probs2': probs2},f)
     
     

@@ -11,6 +11,15 @@ if __name__ == "__main__":
     a_file = open("/home/pg520/phenodistance/data/neutralsets.pkl", "rb")
     neutralsets = pickle.load(a_file)
     
+    phi_pq = phipqD(DGPmap,neutralsets,K,L)
+    phi_pq_site = phipqD_site(DGPmap,neutralsets,K,L)
+
+    with open('/home/pg520/phenodistance/data/phi_pq.pkl', 'wb') as f:
+        pickle.dump(phi_pq, f)
+    with open('/home/pg520/phenodistance/data/phi_pq_site.pkl', 'wb') as f:
+        pickle.dump(phi_pq_site, f)
+        
+    """ 
     hamming_local_mean, hamming_local_std, edgediffnodel, phenos, phenosevolvability, phenosevweighted, robustnesssite, totrobust, edgenondel = hamming_local_D_PD_site_nodel(DGPmap)
     siteshammingmean = defaultdict(functools.partial(defaultdict, float))
     siteshammingstd = defaultdict(functools.partial(defaultdict, float))
@@ -33,3 +42,4 @@ if __name__ == "__main__":
         pickle.dump(siteshammingmean, f)
     with open('/home/pg520/phenodistance/data/siteshammingstd.pkl', 'wb') as f:
         pickle.dump(siteshammingstd, f)
+    """

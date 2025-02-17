@@ -304,3 +304,13 @@ def phipqD(gpmap,neutralsets,K,L):
             phi_pq[gpmap[seq]][gpmap[mut]] +=1/(neutralsets[gpmap[seq]+'\n']*(K-1)*L)
     return phi_pq
 
+def phipqD_site(gpmap,neutralsets,K,L):
+    phi_pq_site = defaultdict(functools.partial(defaultdict, functools.partial(defaultdict, float)))
+    for seq in gpmap.keys():
+        if seq == '.'*L: continue
+        for site in range(0,L):
+            for mut in mutationalneighbours_site(seq,site):
+                phi_pq_site[gpmap[seq]][site][gpmap[mut]] +=1/(neutralsets[gpmap[seq]+'\n']*(K-1))
+    return phi_pq_site
+
+

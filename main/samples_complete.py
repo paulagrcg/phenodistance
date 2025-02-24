@@ -4,16 +4,16 @@ import sys
 
 if __name__ == "__main__":
   
-    i = sys.argv[1]
+    i = 1
 
     if i == 0:
         avnss = defaultdict(float)
 
-        for j in range(1,251.0):
+        for j in range(1,101):
             with open("/rds/user/pg520/hpc-work/samples/neutralsetsDPD"+str(j)+".pkl", 'rb') as handle:
                 nsets = pickle.load(handle)
                 for k,nss in nsets.items():
-                    avnss[k]+=nss/250.0
+                    avnss[k]+=nss/100.0
 
         with open("/home/pg520/phenodistance/data/avnssDPD.pkl","wb") as f:
             pickle.dump(avnss,f)
@@ -21,7 +21,7 @@ if __name__ == "__main__":
     if i == 1:
         avrhog = defaultdict(float)
 
-        for j in range(1,251.0):
+        for j in range(1,251):
             with open("/rds/user/pg520/hpc-work/samples/rhogDPD"+str(j)+".pkl", 'rb') as handle:
                 rho_gs = pickle.load(handle)
                 for k,rhog in rho_gs.items():
@@ -32,7 +32,7 @@ if __name__ == "__main__":
     if i == 2:
         avrhop = defaultdict(float)
 
-        for j in range(1,251.0):
+        for j in range(1,251):
             with open("/rds/user/pg520/hpc-work/samples/rhopDPD"+str(j)+".pkl", 'rb') as handle:
                 rho_ps = pickle.load(handle)
                 for k,rhog in rho_ps.items():
@@ -56,7 +56,7 @@ if __name__ == "__main__":
     if i == 4:
         avevolp= defaultdict(float)
 
-        for j in range(1,251.0):
+        for j in range(1,251):
             with open("/rds/user/pg520/hpc-work/samples/evolpDPD"+str(j)+".pkl", 'rb') as handle:
                 evol_ps = pickle.load(handle)
                 for k,evolp in evol_ps.items():

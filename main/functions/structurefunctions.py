@@ -2,6 +2,7 @@ from collections import Counter
 from collections import defaultdict
 import random 
 import sys
+import pickle
 import functools
 sys.path.append('/home/pg520/phenodistance/main/functions/')
 from basefunctions import *
@@ -192,6 +193,18 @@ def neutralsets_DPD(neutralsets,L):
                     fPD[p1] += neutralsets[key2] * (d / L)
     return fPD
 
+
+def neutralsets_NDPD(NDsetsize,L):
+    fPD= defaultdict(float)
+    for key1 in NDsetsize.keys():
+        p1 = key1[:12]  
+        for key2 in NDsetsize.keys():
+            p2 = key2[:12]  
+            for d in range(L + 1):
+                if similarity(p1, p2) == d / L:
+                    fPD[p1] += NDsetsize[key2] * (d / L)
+    return fPD
+
 def hamming_local_D_PD(gpmap):
     edge = defaultdict(float)
     hamming_local = defaultdict(functools.partial(defaultdict, float))
@@ -314,3 +327,9 @@ def phipqD_site(gpmap,neutralsets,K,L):
     return phi_pq_site
 
 
+if __name__ == "__main__":
+    with open("/rds/user/pg520/hpc-work/NDsetsize.pkl", 'rb') as handle:
+        NDsetsize = pickle.load(handle) 
+    neutralsets_NDPD = neutralsets_NDPD(NDsetsize,12)
+    with open("../../data/neutralsets_NDPD.pkl","wb") as f:
+        pickle.dump(neutralsets_NDPD,f)

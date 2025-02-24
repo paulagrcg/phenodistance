@@ -225,7 +225,7 @@ if __name__ == "__main__":
         names = pickle.load(f)
 
     samplesize = int(sys.argv[1])
-    seqposition = int(sys.argv[2])
+    seqposition = int(sys.argv[2]) + 5000
     #i = 0
     #start = time.time()
     #seqs, folds1, folds2, probs1, probs2 = scan_sites(selected_sequences[i], samplesize)

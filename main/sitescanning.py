@@ -225,7 +225,9 @@ if __name__ == "__main__":
         names = pickle.load(f)
 
     samplesize = int(sys.argv[1])
-    seqposition = int(sys.argv[2]) + 5000
+    #seqposition = int(sys.argv[2]) + 10000
+    missing_numbers = np.load("./missing_numbers.npy")
+    seqposition = missing_numbers[int(sys.argv[2])]
     #i = 0
     #start = time.time()
     #seqs, folds1, folds2, probs1, probs2 = scan_sites(selected_sequences[i], samplesize)
@@ -247,4 +249,5 @@ if __name__ == "__main__":
     with open(f"../data/to_analyse{seqposition}_ssize{samplesize}.pkl","wb") as f:
         pickle.dump({'seqs': seqs, 'probs1': probs1, 'probs2': probs2},f)
     
-    
+
+

@@ -6,9 +6,23 @@ from functions.basefunctions import *
 from collections import defaultdict
 from functionalRNA import *
 import sys
-import time
 import pickle
+import signal
 
+
+def save_checkpoint(seqposition, samplesize, site, seqs, probs1, probs2):
+    """Save the current state of seqs, probs1, and probs2 to a checkpoint file."""
+    checkpointlen = samplesize-len(seqs)
+    checkpoint_file = f"../data/checkpoint_{checkpointlen}_{site}_{seqposition}_ssize{samplesize}.pkl"
+    with open(checkpoint_file, "wb") as f:
+        pickle.dump({'seqs': seqs, 'probs1': probs1, 'probs2': probs2}, f)
+    print(f"Checkpoint saved to {checkpoint_file}")
+
+def handler(signum, frame):
+    """Handle termination signals by saving the current state and exiting."""
+    print("Received termination signal. Saving state...")
+    save_checkpoint()
+    sys.exit(0)
 
 def plasticitydistance(fRNAprob1, fRNAprob2):
     distances = {}
@@ -125,9 +139,13 @@ def hamming_plasticity_optimal(fRNAhammingdistance, fRNAfolds, distances):
     return left_names, left_names_a,left_names_minus_a
 
 def mutatesite(seq, site):
-    mutations = {'A': ['C', 'T', 'G'], 'C': ['A', 'T', 'G'], 'G': ['A', 'T', 'C'], 'T': ['A', 'G', 'C']}
-    mutationchoices = [seq[:site] + m + seq[site+1:] for m in mutations[str(seq[site])]]
-
+    try:
+        mutations = {'A': ['C', 'T', 'G'], 'C': ['A', 'T', 'G'], 'G': ['A', 'T', 'C'], 'T': ['A', 'G', 'C']}
+        mutationchoices = [seq[:site] + m + seq[site+1:] for m in mutations[str(seq[site])]]
+    except KeyError:
+        print(f"KeyError: {seq[site]} not in mutations")
+        print(seq)
+        return []
     return mutationchoices
 
 def scan_sites(seq, samplesize):
@@ -156,7 +174,12 @@ def scan_sites(seq, samplesize):
     while site < seqlen:
             site_neutral = False
             mutationchoices = mutatesite(seq, site)  # random mutation at site
-
+            if not mutationchoices:
+                #print(f"No more mutation choices at site {site}")
+                site += 1
+                if site == seqlen:
+                    break
+                continue
             while not site_neutral and mutationchoices:
                 m = np.random.randint(0, len(mutationchoices))
                 seqmut = mutationchoices.pop(m)
@@ -176,6 +199,8 @@ def scan_sites(seq, samplesize):
                     probs2.append(prob2)
 
                     samplesizecount += 1
+                    if samplesizecount % 100 == 0:  # Save progress every 10 samples
+                        save_checkpoint(seqposition, samplesize, site, seqs, probs1, probs2)
                     if samplesizecount == samplesize:
                         break
                     site += 1
@@ -226,8 +251,9 @@ if __name__ == "__main__":
 
     samplesize = int(sys.argv[1])
     #seqposition = int(sys.argv[2]) + 10000
-    missing_numbers = np.load("./missing_numbers.npy")
+    missing_numbers = np.load("../main/missing_numbers.npy")
     seqposition = missing_numbers[int(sys.argv[2])]
+    print(seqposition)
     #i = 0
     #start = time.time()
     #seqs, folds1, folds2, probs1, probs2 = scan_sites(selected_sequences[i], samplesize)
@@ -240,11 +266,15 @@ if __name__ == "__main__":
     p2 = fRNAprob2[tuple(names[seqposition])]
 
     #seqs, folds1, folds2, probs1, probs2 = scan_sites(selected_names[seqposition][1], samplesize)
-    #start = time.time()
-    seqs, probs1, probs2 = scan_sites(tuple(names[seqposition])[1], samplesize)
+    try:
+        seqs, probs1, probs2 = scan_sites(tuple(names[seqposition])[1], samplesize)
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        save_checkpoint()
+        sys.exit(1)
+
     #end = time.time()
     #print(f"Time taken for site scanning: {end-start}")
-
     #print(f"Time taken for site scanning: {end-start}")
     with open(f"../data/to_analyse{seqposition}_ssize{samplesize}.pkl","wb") as f:
         pickle.dump({'seqs': seqs, 'probs1': probs1, 'probs2': probs2},f)

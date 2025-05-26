@@ -1,67 +1,59 @@
 import pickle
 from collections import defaultdict
-import sys 
+import sys
+import glob
+import os
+
+def average_dicts(files):
+    avg = defaultdict(float)
+    nfiles = len(files)
+    if nfiles == 0:
+        print("No files found.")
+        return avg
+    for fname in files:
+        with open(fname, 'rb') as handle:
+            data = pickle.load(handle)
+            for k, v in data.items():
+                avg[k] += v
+    for k in avg:
+        avg[k] /= nfiles
+    return avg
 
 if __name__ == "__main__":
-  
+
     i = int(sys.argv[1])
 
     if i == 0:
-        avnss = defaultdict(float)
-
-        for j in range(1,251):
-            with open("/rds/user/pg520/hpc-work/samples/neutralsetsDPD"+str(j)+".pkl", 'rb') as handle:
-                nsets = pickle.load(handle)
-                for k,nss in nsets.items():
-                    avnss[k]+=nss/250.0
-
-        with open("/home/pg520/phenodistance/data/avnssDPD.pkl","wb") as f:
-            pickle.dump(avnss,f)
+        files = sorted(glob.glob("/rds/user/pg520/hpc-work/samples/neutralsetsDPD*.pkl"))
+        print(f"Processing {len(files)} files for neutral sets")
+        avnss = average_dicts(files)
+        with open("/home/pg520/phenodistance/data/avnssDPD.pkl", "wb") as f:
+            pickle.dump(avnss, f)
 
     if i == 1:
-        avrhog = defaultdict(float)
+        files = sorted(glob.glob("/rds/user/pg520/hpc-work/samples/rhogDPD*.pkl"))
+        print(f"Processing {len(files)} files for rho_g")
+        avrhog = average_dicts(files)
+        with open("/home/pg520/phenodistance/data/avrhogDPD.pkl", "wb") as f:
+            pickle.dump(avrhog, f)
 
-        for j in range(1,251):
-            print(j)
-            with open("/rds/user/pg520/hpc-work/samples/rhogDPD"+str(j)+".pkl", 'rb') as handle:
-                rho_gs = pickle.load(handle)
-                for k,rhog in rho_gs.items():
-                    avrhog[k]+=rhog/250.0
-
-        with open("/home/pg520/phenodistance/data/avrhogDPD.pkl","wb") as f:
-            pickle.dump(avrhog,f)
     if i == 2:
-        avrhop = defaultdict(float)
-
-        for j in range(1,251):
-            with open("/rds/user/pg520/hpc-work/samples/rhopDPD"+str(j)+".pkl", 'rb') as handle:
-                rho_ps = pickle.load(handle)
-                for k,rhog in rho_ps.items():
-                    avrhop[k]+=rhog/250.0
-
-        with open("/home/pg520/phenodistance/data/avrhopDPD.pkl","wb") as f:
-            pickle.dump(avrhop,f)
+        files = sorted(glob.glob("/rds/user/pg520/hpc-work/samples/rhopDPD*.pkl"))
+        print(f"Processing {len(files)} files for rho_p")
+        avrhop = average_dicts(files)
+        with open("/home/pg520/phenodistance/data/avrhopDPD.pkl", "wb") as f:
+            pickle.dump(avrhop, f)
 
     if i == 3:
-        avevolg = defaultdict(float)
-
-        for j in range(1,251.0):
-            with open("/rds/user/pg520/hpc-work/samples/evolgDPD"+str(j)+".pkl", 'rb') as handle:
-                evol_gs = pickle.load(handle)
-                for k,evolg in evol_gs.items():
-                    avevolg[k]+=evolg/250.0
-
-        with open("/home/pg520/phenodistance/data/avevolgDPD.pkl","wb") as f:
-            pickle.dump(avevolg,f)
+        files = sorted(glob.glob("/rds/user/pg520/hpc-work/samples/evolgDPD*.pkl"))
+        print(f"Processing {len(files)} files for evolution of g")
+        avevolg = average_dicts(files)
+        with open("/home/pg520/phenodistance/data/avevolgDPD.pkl", "wb") as f:
+            pickle.dump(avevolg, f)
 
     if i == 4:
-        avevolp= defaultdict(float)
-
-        for j in range(1,251):
-            with open("/rds/user/pg520/hpc-work/samples/evolpDPD"+str(j)+".pkl", 'rb') as handle:
-                evol_ps = pickle.load(handle)
-                for k,evolp in evol_ps.items():
-                    avevolp[k]+=evolp/250.0
-
-        with open("/home/pg520/phenodistance/data/avevolpDPD.pkl","wb") as f:
-            pickle.dump(avevolp,f)
+        files = sorted(glob.glob("/rds/user/pg520/hpc-work/samples/evolpDPD*.pkl"))
+        print(f"Processing {len(files)} files for evolution of p")
+        avevolp = average_dicts(files)
+        with open("/home/pg520/phenodistance/data/avevolpDPD.pkl", "wb") as f:
+            pickle.dump(avevolp, f)

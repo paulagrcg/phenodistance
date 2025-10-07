@@ -20,3 +20,4 @@ env/
 
 # Ignore environment variable files
 .env
+.gitignore

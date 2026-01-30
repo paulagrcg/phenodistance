@@ -1,6 +1,7 @@
 import RNA
 import numpy as np
 from scipy.stats import pearsonr
+from typing import Optional
 
 
 def mutationalneighbours_site(seq, site):
@@ -29,7 +30,7 @@ def mutational_neighbours_site(seq: str, site: int):
         if nt != wt:
             yield seq[:site] + nt + seq[site+1:]
 
-def site_scan_totals_non_neutral(sequence: str, wt_structure: str | None = None):
+def site_scan_totals_non_neutral(sequence: str, wt_structure: Optional[str] = None):
     """
     For each site i:
       - H_total[i] = sum of Hamming distances WT->mutant over NON-neutral mutants only
@@ -69,7 +70,7 @@ def site_scan_totals_non_neutral(sequence: str, wt_structure: str | None = None)
 
     return out
 
-def aggregate_RNA12_style_non_neutral(sequences: list[str], target_structure: str | None = None):
+def aggregate_RNA12_style_non_neutral(sequences: list[str], target_structure: Optional[str] = None):
     """
     RNA12-style phenotype-level aggregation using a finite sample:
 

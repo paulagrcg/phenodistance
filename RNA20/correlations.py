@@ -8,6 +8,8 @@ r_values = []
 p_values = []
 structures = []
 h_mean_e_val_correlations = []  # Store r and p for H_mean vs e_val
+h_vs_rho_by_sample = {}
+structure_by_sample = {}
 significant_samples = set()  # Track samples with significant H vs rho correlation
 
 rna20_dir = "/home/pg520/phenodistance/RNA20"
@@ -38,6 +40,11 @@ for rna_file in rna20_files:
             mfe_match = re.search(r'MFE Structure: (.+)', content)
             mfe = mfe_match.group(1) if mfe_match else "N/A"
             structures.append(mfe)
+            h_vs_rho_by_sample[sample_num] = {
+                'r': r,
+                'p': p
+            }
+            structure_by_sample[sample_num] = mfe
             print(f"Significant Sample {sample_num}: r={r}, p={p}")
 
 # Second pass: calculate H_mean vs e_val only for significant samples
@@ -98,6 +105,33 @@ for corr_data in sorted(h_mean_e_val_correlations, key=lambda x: int(x['sample']
         significant_h_mean_e_val.append(corr_data['sample'])
 
 print(f"\nSignificant H_mean vs e_val correlations (p < 0.05): {significant_h_mean_e_val}")
+
+# Write CSV for significant H vs rho structures
+h_vs_rho_csv = '/home/pg520/phenodistance/RNA20_structures_h_vs_rho_significant.csv'
+with open(h_vs_rho_csv, 'w') as table_file:
+    table_file.write('sample,structure,r,p\n')
+    for sample in sorted(significant_samples, key=lambda x: int(x)):
+        structure = structure_by_sample.get(sample, 'N/A')
+        h_vs_rho = h_vs_rho_by_sample.get(sample, {})
+        h_vs_rho_r = h_vs_rho.get('r', 'N/A')
+        h_vs_rho_p = h_vs_rho.get('p', 'N/A')
+        table_file.write(f"{sample},{structure},{h_vs_rho_r},{h_vs_rho_p}\n")
+
+# Write CSV for significant H_mean vs e_val structures
+h_mean_e_val_csv = '/home/pg520/phenodistance/RNA20_structures_h_vs_e_val_significant.csv'
+h_mean_e_val_map = {item['sample']: item for item in h_mean_e_val_correlations}
+with open(h_mean_e_val_csv, 'w') as table_file:
+    table_file.write('sample,structure,r,p,n_sites\n')
+    for sample in sorted(significant_h_mean_e_val, key=lambda x: int(x)):
+        structure = structure_by_sample.get(sample, 'N/A')
+        h_mean_vs_e_val = h_mean_e_val_map.get(sample, {})
+        h_mean_vs_e_val_r = h_mean_vs_e_val.get('r', 'N/A')
+        h_mean_vs_e_val_p = h_mean_vs_e_val.get('p', 'N/A')
+        h_mean_vs_e_val_n = h_mean_vs_e_val.get('n_sites', 'N/A')
+        table_file.write(f"{sample},{structure},{h_mean_vs_e_val_r},{h_mean_vs_e_val_p},{h_mean_vs_e_val_n}\n")
+
+print(f"\nStructure table saved to {h_vs_rho_csv}")
+print(f"Structure table saved to {h_mean_e_val_csv}")
 
 # Plot histogram of Pearson r values (overlayed)
 plt.figure(figsize=(10, 6))

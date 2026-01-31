@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 r_values = []
 p_values = []
 structures = []
-h_mean_e_val_correlations = []  # Store r and p for H_mean vs e_val
+h_mean_e_val_correlations = []  # Store r and p for H_mean vs e_val (all samples)
 h_vs_rho_by_sample = {}
 structure_by_sample = {}
 significant_samples = set()  # Track samples with significant H vs rho correlation
@@ -47,7 +47,7 @@ for rna_file in rna20_files:
             structure_by_sample[sample_num] = mfe
             print(f"Significant Sample {sample_num}: r={r}, p={p}")
 
-# Second pass: calculate H_mean vs e_val only for significant samples
+# Second pass: calculate H_mean vs e_val for all samples
 for rna_file in rna20_files:
     with open(rna_file, 'r') as f:
         content = f.read()
@@ -56,10 +56,6 @@ for rna_file in rna20_files:
     match = re.search(r'RNA20_site_scan_summary_(\d+)\.txt', rna_file.name)
     if match:
         sample_num = match.group(1)
-    
-    # Only process if this sample is significant in H vs rho
-    if sample_num not in significant_samples:
-        continue
     
     # Calculate correlation between H_mean and e_val
     lines = content.split('\n')
@@ -134,29 +130,10 @@ print(f"\nStructure table saved to {h_vs_rho_csv}")
 print(f"Structure table saved to {h_mean_e_val_csv}")
 
 # Plot histogram of Pearson r values (overlayed)
-plt.figure(figsize=(8, 6))
+plt.figure(figsize=(6, 4.5))
 
 h_vs_rho_r = r_values
-h_mean_vs_e_val_r = [item['r'] for item in h_mean_e_val_correlations]
-
 bins = 15
-
-if h_mean_vs_e_val_r:
-    counts_red, bin_edges = np.histogram(h_mean_vs_e_val_r, bins=bins)
-    if counts_red.max() > 0:
-        counts_red = counts_red / counts_red.max()
-    bin_centers = (bin_edges[:-1] + bin_edges[1:]) / 2
-    bin_width = bin_edges[1] - bin_edges[0]
-    plt.bar(
-        bin_centers,
-        counts_red,
-        width=bin_width,
-        color='red',
-        edgecolor='black',
-        alpha=0.6,
-        label=r'$\langle H_p^{[i]}\rangle,\ e_p^{[i]}$',
-        align='center'
-    )
 
 if h_vs_rho_r:
     counts_blue, bin_edges = np.histogram(h_vs_rho_r, bins=bins)
@@ -177,10 +154,9 @@ if h_vs_rho_r:
 
 plt.xlabel('Pearson r', fontsize=20)
 plt.ylabel('Normalised Frequency', fontsize=20)
-plt.title('Pearson r Distributions', fontsize=14)
-plt.xticks([-1.0, -0.5, 0.0, 0.5, 1.0], fontsize=20)
+plt.xticks([0.0, 0.5, 1.0], fontsize=20)
 plt.yticks([0.0, 0.5, 1.0], fontsize=20)
-plt.legend(fontsize=10)
+plt.legend(fontsize=16)
 plt.grid(axis='y', alpha=0.3)
 plt.tight_layout()
 plt.savefig('/home/pg520/phenodistance/r_values_histogram.pdf', dpi=300)

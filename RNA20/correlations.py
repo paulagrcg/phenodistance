@@ -134,7 +134,7 @@ print(f"\nStructure table saved to {h_vs_rho_csv}")
 print(f"Structure table saved to {h_mean_e_val_csv}")
 
 # Plot histogram of Pearson r values (overlayed)
-plt.figure(figsize=(10, 6))
+plt.figure(figsize=(8, 6))
 
 h_vs_rho_r = r_values
 h_mean_vs_e_val_r = [item['r'] for item in h_mean_e_val_correlations]
@@ -142,30 +142,44 @@ h_mean_vs_e_val_r = [item['r'] for item in h_mean_e_val_correlations]
 bins = 15
 
 if h_mean_vs_e_val_r:
-    plt.hist(
-        h_mean_vs_e_val_r,
-        bins=bins,
-        density=True,
+    counts_red, bin_edges = np.histogram(h_mean_vs_e_val_r, bins=bins)
+    if counts_red.max() > 0:
+        counts_red = counts_red / counts_red.max()
+    bin_centers = (bin_edges[:-1] + bin_edges[1:]) / 2
+    bin_width = bin_edges[1] - bin_edges[0]
+    plt.bar(
+        bin_centers,
+        counts_red,
+        width=bin_width,
         color='red',
         edgecolor='black',
         alpha=0.6,
-        label=r'$\langle H_p^{[i]}\rangle,\ e_p^{[i]}$'
+        label=r'$\langle H_p^{[i]}\rangle,\ e_p^{[i]}$',
+        align='center'
     )
 
 if h_vs_rho_r:
-    plt.hist(
-        h_vs_rho_r,
-        bins=bins,
-        density=True,
+    counts_blue, bin_edges = np.histogram(h_vs_rho_r, bins=bins)
+    if counts_blue.max() > 0:
+        counts_blue = counts_blue / counts_blue.max()
+    bin_centers = (bin_edges[:-1] + bin_edges[1:]) / 2
+    bin_width = bin_edges[1] - bin_edges[0]
+    plt.bar(
+        bin_centers,
+        counts_blue,
+        width=bin_width,
         color='blue',
         edgecolor='black',
         alpha=0.6,
-        label=r'$\langle H_p^{[i]}\rangle,\ \rho_p^{[i]}$'
+        label=r'$\langle H_p^{[i]}\rangle,\ \rho_p^{[i]}$',
+        align='center'
     )
 
-plt.xlabel('Pearson r', fontsize=12)
-plt.ylabel('Normalised Frequency', fontsize=12)
+plt.xlabel('Pearson r', fontsize=20)
+plt.ylabel('Normalised Frequency', fontsize=20)
 plt.title('Pearson r Distributions', fontsize=14)
+plt.xticks([-1.0, -0.5, 0.0, 0.5, 1.0], fontsize=20)
+plt.yticks([0.0, 0.5, 1.0], fontsize=20)
 plt.legend(fontsize=10)
 plt.grid(axis='y', alpha=0.3)
 plt.tight_layout()

@@ -215,9 +215,12 @@ def scan_sites_mfe(seq, samplesize):
 if __name__ == "__main__":
     import sys
     import time
+    import os
     
-    # Read sequences from file
-    with open('samples_sequences.txt', 'r') as f:
+    # Read sequences from file (path relative to this script)
+    data_dir = os.path.dirname(os.path.abspath(__file__))
+    sequences_path = os.path.join(data_dir, "sampled_sequences.txt")
+    with open(sequences_path, 'r') as f:
         sequences = [line.strip() for line in f if line.strip()]
     
     # Get sequence at index from command line argument
@@ -231,7 +234,10 @@ if __name__ == "__main__":
     dictcorr = sitewise_correlations(summary)["H_vs_rho"]
     end_time = time.time()
     print(f"Time taken: {end_time - start_time} seconds")
-    np.savetxt(f"RNA20_site_scan_summary_{idx}.txt",
+    
+    # Save output in RNA20 directory
+    output_path = os.path.join(data_dir, f"RNA20_site_scan_summary_{idx}.txt")
+    np.savetxt(output_path,
                np.array([[i,
                           summary[i]["H_mean"],
                           summary[i]["H_mean_from_array"],
@@ -243,4 +249,7 @@ if __name__ == "__main__":
                           summary[i]["f_q"]] for i in sorted(summary.keys())]),
                fmt=['%d'] + ['%.6f'] * 8,
                header="site H_mean H_mean_from_array H_std_from_array H_total n_non_neutral rho_mean e_val f_q")
-    print(f"Correlation H vs rho: r={dictcorr[0]}, p={dictcorr[1]}")
+
+    # Append correlation info to the same output file
+    with open(output_path, "a") as f:
+        f.write(f"\n# Correlation H vs rho: r={dictcorr[0]}, p={dictcorr[1]}\n")

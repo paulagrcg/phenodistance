@@ -1,4 +1,4 @@
-# Phenotypic distance analysis on RNA12 GP map
+# Phenotypic cliffs on RNA GP map
 
 
 ## **functions** folder
